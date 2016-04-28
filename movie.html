@@ -1,0 +1,13 @@
+<section id="container">
+    <h2 class="hidden">Content Container</h2>
+    <form> 
+        <input id="searchBox" ng-model="query" placeholder="Horror Fan?" autocomplete="off"/>
+        <p>Found<br>{{(movies | filter:query).length}} / {{movies.length}}</p>
+    </form>
+    <div id="contentContainer">
+<a ng-href="#/movies/{{movie.ID -1}}" class="listHolder" ng-repeat="movie in movies | filter:queryFilter | orderBy: 'Title'">
+    <img data-ng-src="{{movie.Thumb}}" alt="{{movie.Title}}"/>
+    <p class="inputs">{{movie.Title}} <span class="YEAR">{{movie.Year}}</span></p>
+</a>
+    </div>
+</section>

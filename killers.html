@@ -1,0 +1,11 @@
+<section id="killerImgContainer"><!--Add counter to TELL WHEN user click which slasher.-->
+    <h3>Choose Your Favorite Slasher!</h3>
+        <ul>
+            <li data-ng-repeat="killer in killers">
+                <a ng-href="#/killers/{{$index}}">
+                    <img data-ng-src="{{killer.Thumb}}" alt="{{killer.Name}}"/>
+                    <span>{{killer.Name}}</span>
+                </a>
+            </li>
+        </ul>
+</section>

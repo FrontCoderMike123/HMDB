@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Horror Movie Database</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kotta+One' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<script src="js/TweenMax.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body ng-app="killers">
+    <h2 class="hidden">Search for you favorite horror movie!</h2>
+
+<header>
+<a href="#/movies" id="logo">           
+    <div>
+        <object data="images/svg/logo.svg">
+            <img src="images/logo.png" alt="HMDB Logo" title="Horror Movie Database">
+        </object>
+    </div>
+</a>
+
+<a href="#/killers" id="killers">
+    <div>
+        <object data="images/svg/killers.svg">
+            <img src="images/killers.png" alt="Pick a Killer" title="Pick a Killer">
+        </object>
+    </div>
+</a>
+</header>
+
+    <ui-view id="viewHolder">
+    </ui-view>
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-ui-router.js"></script>
+    <script src="js/killerAngular.js"></script>
+
+</body>
+</html>

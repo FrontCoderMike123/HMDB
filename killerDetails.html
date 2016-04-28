@@ -1,0 +1,38 @@
+<section id="killerHolder">
+    <h2 class="hidden">Slasher</h2>
+    <img data-ng-src="{{Photo}}" alt="{{Name}}"/>
+    <h3 id="name">{{Name}}</h3>
+
+    <span class="stats">Famous For</span>
+    <p>{{Famous}}</p>
+
+    <span class="stats">History</span>
+    <p>{{Passed}}</p>
+
+    <span class="stats">First Victim</span>
+    <p>{{Victim}}</p>
+
+    <span class="stats">Height</span>
+    <p>{{Height}}</p>
+
+    <span class="stats">Weight</span>
+    <p>{{Weight}}</p>
+
+    <span class="stats">Weapon Of Choice</span>
+    <p>{{Weapon}}</p>
+
+    <span class="stats">Number Of Victims</span>
+    <p>{{Kills}}</p>
+
+    <span class="stats">List Of Films</span>
+    <ul>
+        <li data-ng-repeat="film in Films">
+            <a ng-href="#/movies/{{$index}}">
+                <p>{{film}}</p>
+            </a>
+        </li>
+    </ul>
+
+    <span class="stats">Description</span>
+    <p>{{Desc}}</p>
+</section>

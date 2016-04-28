@@ -1,0 +1,186 @@
+{
+	"Killers":
+	[{
+		"ID":"1",
+		"Name":"Jason Voorhees",
+		"Photo":"images/killers/jason.jpg",
+		"Thumb":"images/killers/jasonTH.jpg",
+		"Famous":"Friday the 13th",
+		"Passed":"Mommy's boy and legendary Crystal Lake 'Slasher', Jason was the multihomicidal main character of the Friday The 13th franchise. Seeking for vengeance, Jason is considered the most brutal mass killer of all time in the film world.",
+		"Victim":"Alice L. Hardy is the original protagonist of Friday the 13th. Alice was a budding artist and one of the counselors hired at Camp Crystal Lake in 1979. Alice was the killer of Pamela Voorhees and the sole survivor of her killing spree in 1979, and was the first victim of Jason Voorhees.",
+		"Height":"6'3",
+		"Weight":"250 lbs",
+		"Weapon":"Machete and sometimes his brute strength.",
+		"Kills":"158 Victims",
+		"Desc":"Pamela wanted young Jason to have all of the fun and experiences the other children had, and wanted nothing more than for him to be happy. So one year she allowed little Jason to join a summer camp, at Camp Crystal Lake, Where she worked as the cook. However one fateful day, the two counselors on duty who were meant to be supervising the young campers, left their duties to have sex. While the counselors were having indulging their carnal desires, little Jason was chased down to the Lake by the other kids who threw him. However, Jason didn't know how to swim, and without any adult supervision he drowned. This was something whom his mother could not forgive. Hearing the voice of her dead son, drove her to murderous madness. She went on to kill many camp counselors, in the name of her son who rested at the bottom of the Crystal Lake. One fateful night however, a Camp Counselor by the name of Alice fought back, decapitating Pamela with her own machete. That night Jason witnessed his mother die, bringing life back into his cold rotting corpse, he would avenge his mother's death. Thus, Jason not only has suffered the abuse, ridicule and humiliation that others caused him throughout his whole childhood, also he suffered the murder of the only person who loved him: his mother. Because of this, Jason developed an animadversion so hellish that killed, without any distinction (except children), all those who invaded his territory.",
+		"Films":[
+			"Friday the 13th (1980)",
+			"Friday the 13th Part II (1981)",
+			"Friday the 13th Part III (1982)",
+			"Friday the 13th Part IV: The Final Chapter (1984)",
+			"Friday the 13th Part V: A New Beginning (1985)",
+			"Friday the 13th Part VI: Jason Lives (1986)",
+			"Friday the 13th Part VII: The New Blood (1988)",
+			"Friday the 13th Part VIII: Jason Takes Manhattan (1989) ",
+			"Jason goes to Hell: The Final Friday (1993)",
+			"Jason X (2002)",
+			"Freddy vs. Jason (2003)",
+			"Friday the 13th (2009)"
+		]
+	},{
+		"ID":"2",
+		"Name":"Michael Myers",
+		"Photo":"images/killers/michael.jpg",
+		"Thumb":"images/killers/michaelTH.jpg",
+		"Famous":"Halloween",
+		"Passed":"A seemingly normal American boy, Michael Myers picks up a knife at the age of 6 and systematically butchers his older sister Judith in pure malice. Years later, he escapes an asylum to kill and hunt down anyone connected to him, including his little sister Laurie Strode.",
+		"Victim":"On October 31, 1963, Michael committed his first act of murder. His parents were away, and he was at home with his sister Judith who was supposed to be babysitting him, but cared more about spending an intimate moment with her boyfriend, Danny. After Danny left, Michael, dressed in a clown costume, went into the kitchen, picked up a butcher knife, walked up the steps and stabbed Judith to death. He then quietly walked back downstairs and into the front yard where he waited for his parents and the police to collect him. Michael was taken to Smith's Grove Sanitarium where he became the patient of a psychiatrist named Doctor Sam Loomis. He spent fifteen years with Doctor Loomis, barely moving, never speaking a word.",
+		"Height":"6'4",
+		"Weight":"230 lbs",
+		"Weapon":"Kitchen Knife",
+		"Kills":"111 victims",
+		"Desc":"Michael Audrey Myers was born on October 19, 1957. He had an older sister named Judith and a younger sister. The family resided in a two-story house at 45 Lampkin Lane in the suburban town of Haddonfield, Illinois. By 1963, when Michael was six-years-old, he claimed to have suffered from bizarre, inexplicable nightmares and heard a voice in his head that would tell him to do things. The voices tell me to say I hate people, says Michael. His dreams were filled with images of actual events that took place several centuries ago at the dawn of the Celtic age. He dreamed of a disfigured fifteen-year-old boy named Enda who, after being rejected by his true love Deirdre, brutally murdered her during the feast of Samhain, on what would later be called Halloween night. These visions would have a greater impact on Michael later on in his life.",
+		"Films":[
+			"Halloween (1978)",
+			"Halloween II (1981)",
+			"Halloween 4: The Return of Michael Myers (1988)",
+			"Halloween 5: The Revenge of Michael Myers (1989)",
+			"Halloween 6: The Curse of Michael Myers (1995)",
+			"Halloween H20: Twenty Years Later (1998)",
+			"Halloween: Resurrection (2002)",
+			"Halloween (2007)",
+			"Halloween 2 (2008)"
+		]
+	},{
+		"ID":"3",
+		"Name":"Leatherface",
+		"Photo":"images/killers/texas.jpg",
+		"Thumb":"images/killers/texasTH.jpg",
+		"Famous":"Texas Chainsaw Massacre",
+		"Passed":"The most iconic member of the cannibalistic Sawyer clan (Hewitt clan in the remake) Leatherface is best known for maniacally wielding a chainsaw and wearing a mask made out of human skin and a butcher's apron.",
+		"Victim":"Despite being heavily touted as inspired by a true story, both Tobe Hooper's original 1974 film and the 2003 Marcus Nispel remake are only lightly based on the real-life murderer Ed Gein, who is suspected to have taken several victims between 1954 and 1957. Perhaps the most recognizable similarity is the film's house, whose gruesome content was similar to that found in Ed Gein's home in 1957.",
+		"Height":"5'11",
+		"Weight":"280 lbs",
+		"Weapon":"Chainsaw",
+		"Kills":"Cannibals eat a lot!",
+		"Desc":"Leatherface continuing the good work he did in the family abattoir likes to kill his victims then hang and cut them up on meat hooks. One of the most horrific scenes in the original film showed Leatherface hanging Sally up on a hook while he finished off her boyfriend. As stated above, Thomas dearly misses the work he undertook at the abattoir, perhaps the only place he felt useful and a sense of belonging. His treatment of his victims displays this disappointment as he makes excited noises and imitates the screams of his victims, like he used to do with the cattle. He swaps between knife and hammer to kill his victims, smashing in their heads as he did with the cattle, then chopping up the bodies and passing on the meat to his brother Drayton.",
+		"Films":[
+			"The Texas Chainsaw Massacre (1974)",
+			"The Texas Chainsaw Massacre 2 (1986)",
+			"Leatherface: Texas Chainsaw Massacre III (1990)",
+			"The Texas Chainsaw Massacre: The Next Generation (1994/1997)",
+			"The Texas Chainsaw Massacre (2003)",
+			"The Texas Chainsaw Massacre: The Beginning (2006)"
+		]
+	},{
+		"ID":"4",
+		"Name":"Freddy Krueger",
+		"Photo":"images/killers/freddy.jpg",
+		"Thumb":"images/killers/freddyTH.jpg",
+		"Famous":"The Nightmare on Elm Street",
+		"Passed":"A murdered child killer who torments his teenage victims in their dreams. You are not safe when you sleep.",
+		"Victim":"Years after Freddy's physical death, and after his daughter is taken away and all records of her true identity are done away with, a new family moves into Freddy's old house... 1428 Elm Street. It was always in this house where Freddy committed most of his murders. Through the use of Nancy Thompson Freddy kills teens through their dreams and most of all their fears. He used their souls to strengthen his powers and their fear of him to live on through their dreams. For ten years he continued his slaughter of teens, each time seemingly defeated by teens with unusual dream powers. He survived until he found his daughter. Katheryn managed to pull Freddy out of her dream. With the help of a few friends she managed to finally kill Freddy.",
+		"Height":"5'8",
+		"Weight":"160 lbs",
+		"Weapon":"A glove wielding four 10 inch blades.",
+		"Kills":"43 victims",
+		"Desc":"Amanda Krueger was a nurse at the local state hospital. When counting the inmates before the lock down for the Christmas holiday, Amanda was accidentally locked in a room of 100 inmates. When everyone found her, she was beaten and raped and with child. She gave birth to Fred Krueger. As a child, Freddy was tormented by other children driving him further insane. The other school kids often referred to him as the Son of a Hundred Maniacs. Freddy was an easy target for bullies and was often alone on the playground. He took pleasure in torturing small animals like mice and hamsters. Life at home wasn't the easiest, especially with his often drunk and abusive father. Freddy eventually snapped and stopped feeling pain. He was 18 when he murdered his father. He eventually got married to Loretta, and had a child of their own, during which he killed many teenagers under the alias of the Springwood Slasher. When his wife finds out about his secret, he kills her in front of their young daughter, Kathryn. Freddy tells the young girl that mommy needed to take her medicine and makes his daughter promise to keep his statement secret, but she doesn't listen. During the trial, Fred's lawyer's found an error in the search warrants. The judge was forced to release Krueger on the spot. When the judge lets him walk, the friends and family of the murdered teenagers take matters into their own hands. They burned him alive in his boiler/lair. While his whole place was burning down around him 3 dream demons offered him the chance of another life in the fear and dream of teenagers for eternity, then the real fun began! And every time Freddy is about to appear, three girls and a boy show up jumping rope (probably his first few victims) and singing 'One, two, Freddy's coming for you. Three, four, better lock your door. Five, six, grab your crucifix. Seven, eight, gonna stay up late. Nine, ten, ever sleep again.'",
+		"Films":[
+			"A Nightmare on Elm Street (1984)",
+			"A Nightmare on Elm Street 2: Freddys Revenge (1985)",
+			"A Nightmare on Elm Street 3: Dream Warriors (1987)",
+			"A Nightmare on Elm Street 4: The Dream Master (1988)",
+			"A Nightmare on Elm Street 5: The Dream Child (1989)",
+			"Freddy is Dead: The Final Nightmare (1991)",
+			"New Nightmare (1994)",
+			"Freddy vs. Jason (2003)",
+			"A Nightmare on Elm Street (2010)"
+		]
+	},{
+		"ID":"5",
+		"Name":"Chucky",
+		"Photo":"images/killers/chucky.jpg",
+		"Thumb":"images/killers/chuckyTH.jpg",
+		"Famous":"Child's Play / Bride of Chucky",
+		"Passed":"Charles Lee Ray (also known as 'The Lakeshore Strangler', and nicknamed 'Chucky') is a fictional character and the titular antagonist of the Chucky horror film series. Chucky is portrayed as a notorious serial killer whose spirit inhabits a fictional Good Guy doll and continuously tries to transfer his soul from the doll to a human body.",
+		"Victim":"A single mother Karen Barclay buys a Good Guy doll from a peddler for her son Andy's 6th birthday. The doll, now possessed by Ray and called 'Chucky', kills Andy's babysitter, Maggie, by hitting her with a hammer, causing her to fall out of the apartment window to her death. Mike suspects Andy killed her, angering Karen. The police leave, and Andy insists that Chucky is alive, much to the dismay of Karen, who scolds Andy for this claim.",
+		"Height":"3'5",
+		"Weight":"25 lbs",
+		"Weapon":"Knife / Blunt objects",
+		"Kills":"73 victims",
+		"Desc":"In his human form Chucky is a caucasian male with shoulder length black hair and blue eyes. However this changes once he enters the doll. He has long, red hair and freckles, along with blue eyes. He wears blue overalls with the logo 'Good Guys', a striped, multi-colored striped shirt, and red converses. Throughout the first three films and for most of the sixth film, he looks like an everyday child's doll, but with the fourth film (Bride of Chucky) came his famous scars and stitches, as well as a bloody eye. This appearance came about after he was chopped to bits at the end of the third movie. In the sixth film (Curse of Chucky), he wears a rubber mask over his face to conceal his afflictions and pass himself off as a normal toy. However, the mask was taken off by the character Barb and his actual look is revealed.",
+		"Films":[
+			"Childs Play (1988)",
+			"Childs Play 2 (1990)",
+			"Childs Play 3 (1991)",
+			"Bride of Chucky (1998)",
+			"Seed of Chucky (2004)",
+			"Curse of Chucky (2013)"
+		]
+	},{
+		"ID":"6",
+		"Name":"Jigsaw Killer",
+		"Photo":"images/killers/saw.jpg",
+		"Thumb":"images/killers/sawTH.jpg",
+		"Famous":"Saw Series",
+		"Passed":"John Kramer (also known as The Jigsaw Killer, commonly referred to as Jigsaw) is a fictional character and the main antagonist from the Saw franchise. Jigsaw made his debut in the first film of the series, Saw, and he later appeared in Saw II, Saw III, Saw IV, Saw V, Saw VI, and Saw 3D. He is portrayed by American actor Tobin Bell. In the series' narrative, Kramer is a former civil engineer dying from an inoperable frontal lobe tumor that had developed from colon cancer. After a failed suicide attempt, Kramer found a new appreciation for his life, and decided to dedicate the rest of his life to inspiring the same appreciation in others by testing their will to live. His methods include forcing his subjects through deadly scenarios, which he referred to as 'games' or 'tests', in which they were forced to inflict pain upon themselves or others in order to escape. These tests were typically symbolic of what Jigsaw perceived as a flaw in each person's moral character or life. The Jigsaw name was given to him by the media for his practice of cutting a puzzle piece shape of flesh from those who fail.",
+		"Victim":"Jigsaw was introduced in the 2004 film Saw through the character Lawrence Gordon's recounting of his first killings. Jigsaw is described as a mysterious person who kidnaps people he believes take their lives for granted and subjects them to 'tests', usually mechanical devices rigged to maim or kill the subjects if they fail to complete it within a certain time period. Unlike most killers, Jigsaw never intends to kill his subjects; the purpose of his traps is to see if the subject has the will to live, as he hopes their experience will teach them the value of life. In John's mind the deaths of those that fail is justified, because those who fail to do what's necessary to survive don't deserve life. As his victims increase, the media dubs him The Jigsaw Killer, or simply Jigsaw, because of the jigsaw puzzle-shaped piece of flesh that he removes from unsuccessful subjects, which he explains in Saw II is meant to symbolize that the subject was missing a vital piece of the human puzzle: the survival instinct.",
+		"Height":"5'9",
+		"Weight":"Loses more each day",
+		"Weapon":"Torture Mechanisms",
+		"Kills":"82 victims",
+		"Desc":"The producers of the Saw films have fought to differentiate the Jigsaw Killer from other horror film killers. Darren Lynn Bousman, the director of Saw II, Saw III, and Saw IV, has stated on the character's role 'He's not Jason or Freddy. He's not even Hannibal Lecter. He's a person with extreme beliefs and he really thinks he's making a difference. He's a vigilante if anything. He thinks he's making a difference.' Tobin Bell, the actor who plays Jigsaw, describes his character's role as being more of a scientist or engineer and he thinks very specifically and very pragmatically. About Jigsaw's games being detail oriented, Bell said: My sense is that Jigsaw is so detail oriented that I think he thinks in terms of worst case scenario. I think he's a very good judge of character, so his sense that, for example, that Detective Matthews was going to play right into his trap, which he did, was right on. Now, it seems to me that he's always got a second plan in place. And there's probably been a number of second plans. I mean, we've only seen three movies. Maybe there are six more somewhere where he failed, where something didn't play out Speaking about playing the character Bell stated that you have to think of someone like Jigsaw from a very specific point of view. He doesn't view himself as some kind of diabolical psychotic. You know there's a little bit of evil in everyone. It just gets carried further. Most of us have some sort of moral fiber that restricts that. Some framework. And then others because of their lives and what happens to them, the thing develops in some other way.",
+		"Films":[
+			"Saw (2004)",
+			"Saw II (2005)",
+			"Saw III (2006)",
+			"Saw IV (2007)",
+			"Saw V (2008)",
+			"Saw VI (2009)",
+			"Saw 3D (2010)"
+		]
+	},{
+		"ID":"7",
+		"Name":"Pinhead",
+		"Photo":"images/killers/pinhead.jpg",
+		"Thumb":"images/killers/pinheadTH.jpg",
+		"Famous":"Hellraiser",
+		"Passed":"Pinhead is a fictional character from the Hellraiser series, mostly serving as the main antagonist.[2] His name is derived from a sobriquet given to him by the crew of the first Hellraiser film. Nearly thirty years later, Clive Barker gave him the proper designation Hell Priest in his sequel to The Hellbound Heart, The Scarlet Gospels.",
+		"Victim":"The character appears in various Hellraiser comics and received his own comic miniseries, entitled Pinhead, published by Marvel Comics' Epic Comics imprint. In the comic book series, Pinhead is depicted as the latest incarnation of the cenobite spirit Xipe Totec, an entity derived from Aztec mythology. In the Harrowing storyline, Pinhead is revealed to have been romantically involved with a cenobite named Merkova, who was killed by the disciples of Morte Mamme, the sister and rival of Leviathan. In the Pinhead/Marshal Law crossover series, it is revealed that Pinhead's human incarnation, Captain Spencer, took part in the Battle of the Somme.",
+		"Height":"5'9",
+		"Weight":"175 lbs",
+		"Weapon":"The Engineer / Hooks and chains.",
+		"Kills":"80 victims",
+		"Desc":"Pinhead is one of the leaders of the Cenobites, formerly humans but transformed into creatures which reside in a extradimensional realm who travel to Earth through a puzzle box called the Lament Configuration in order to harvest human souls. His origins and the nature of the Cenobites vary depending upon the medium: While the character began as an amoral entity blindly devoted to the practice of experimental sadomasochism, later depictions have portrayed him as explicitly evil and even demonic in origin. The character's appearance in 1987's Hellraiser marked a significant departure from the standard 1980s depiction of horror movie villains, who tended to either be completely mute, or provide glib commentary while killing their victims. Rather, Pinhead was depicted as quiet yet articulate and intelligent, drawing influence from classical cinematic depictions of Count Dracula",
+		"Films":[
+			"Hellraiser (1987)",
+			"Hellbound: Hellraiser II (1988)",
+			"Hellraiser III: Hell on Earth (1992)",
+			"Hellraiser: Bloodline (1996)",
+			"Hellraiser: Inferno (2000)",
+			"Hellraiser: Hellseeker (2002)",
+			"Hellraiser: Deader (2005)",
+			"Hellraiser: Hellworld (2005)",
+			"Hellraiser: Revelations (2011)"
+		]
+	},{
+		"ID":"8",
+		"Name":"Ghostface",
+		"Photo":"images/killers/scream.jpg",
+		"Thumb":"images/killers/screamTH.jpg",
+		"Famous":"Scream",
+		"Passed":"Ghostface (alternatively spelled as Ghost Face) is a fictional identity adopted by the primary antagonists of the Scream series. The character is voiced by Roger L. Jackson regardless of who is behind the mask. The character first appeared in Scream (1996) as a disguise used by teenagers Billy Loomis (Skeet Ulrich) and Stu Macher (Matthew Lillard), during their killing spree in the fictional town of Woodsboro. Ghostface was created by Wes Craven and Kevin Williamson. The mask is based on The Scream painting by Edvard Munch and was created and designed by Fun World employee Brigitte Sleiertin as a Halloween costume, prior to being discovered by Marianne Maddalena and Craven for the film. The character is used primarily as a disguise for each of the antagonists of each film to conceal their identity, while conducting serial murders and as such has been portrayed by several actors.",
+		"Victim":"Ghostface first appears in the opening scene of Scream. The character, voiced by Roger L. Jackson, calls and taunts teenager Casey Becker (Drew Barrymore) with horror cliches and trivia questions, eventually murdering her boyfriend Steve Orth (Kevin Patrick Walls) in front of her before she herself is killed. The identity has been adopted by the primary antagonists of each successive film to conceal their indentity, prior to being revealed in each film's final act.",
+		"Height":"Depending who's behind the mask.",
+		"Weight":"Depending who's under the cloak.",
+		"Weapon":"Buck Knife",
+		"Kills":"41 victims",
+		"Desc":"The Ghostface costume is the outfit worn by the main antagonists of the Scream franchise, consisting of a rubber white mask with black eyes, nose and mouth and a black, cloth-like material, hooded-robe with faux-tatters draping from the arms and a spiked-trim to the base of the outfit. In the movie, the costume is considered common and easily purchasable making identifying the buyers difficult and creating the possibility for anyone to be the killer.",
+		"Films":[
+			"Scream (1996)",
+			"Scream 2 (1997)",
+			"Scream 3 (2000)",
+			"Scream 4 (2011)"
+		]
+	}]
+}

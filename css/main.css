@@ -1,0 +1,729 @@
+body {
+	/*font-family: 'Covered By Your Grace', cursive;*/
+	font-size: 100%;
+	background-color: #1f1b1a;
+	overflow-x: hidden;
+}
+
+p,span,input
+{
+	font-family: 'Coming Soon', cursive;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	font-family: 'Kotta One', serif;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+#viewHolder
+{
+	background-color: #5b0a0d;
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+	border-radius: 0 0 5px 5px;
+}
+
+header
+{
+	background-color: #5b0a0d;
+	overflow: hidden;
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 10px 0;
+}
+
+header a
+{
+	display: inline-block;
+	width: 30%;
+	margin: 0 40px;
+}
+
+img
+{
+	max-width: 100%!important;
+}
+
+object
+{
+	max-width: 100%!important;
+	pointer-events: none!important;
+}
+
+.hidden
+{
+	display: none;
+}
+
+/******************************the real way selector************************/
+
+.img-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+ 
+.img-list li {
+  position: relative;
+	text-align: center;
+}
+
+#killerImgContainer
+{
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+
+#killerImgContainer h3
+{
+	font-size: 2em;
+	color: #d4af8e;
+	width: 100%;
+}
+
+#killerImgContainer li
+{
+	width: 12.5%;
+	float: left;
+	padding: 10px 0;
+	border-radius: 5px;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+#killerImgContainer li:hover
+{
+	background-color: rgba(217,175,142,.7);
+}
+
+#killerImgContainer img
+{
+	margin: auto;
+	display: block;
+	border-radius: 5px;
+	-webkit-opacity: .8;
+	-moz-opacity: .8;
+	-o-opacity: .8;
+	opacity: .8;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+#killerImgContainer img:hover
+{
+	-webkit-opacity: 1;
+	-moz-opacity: 1;
+	-o-opacity: 1;
+	opacity: 1;
+}
+
+#killerImgContainer span
+{
+  color: white;	
+}
+
+#showKillerButton
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background-color: #5b0a0d;
+	padding: 7px 10px;
+	color: #d4af8e;
+	font-size: 1.2em;
+	letter-spacing: 1px;
+	width: 16%;
+	text-align: center;
+	cursor: pointer;
+}
+
+/******************************killer selector************************/
+
+#killerHolder
+{
+	width: 98%;
+	margin: auto;
+	background-color: #5b0a0d;
+	padding: 0 1%;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.visible
+{
+	display: block!important;
+	margin-top: 110px!important;
+}
+
+#killerHolder img
+{
+	display: block;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+#killerHolder a
+{
+	color: #f4af8e;
+	text-decoration: none;
+}
+
+#killerHolder p
+{
+	color: #d4af8e;
+	line-height: 30px;
+	font-size: 1.1em;
+	padding: 0 20px;
+	margin: 10px 0;
+}
+
+.stats
+{
+	font-size: 1.5em;
+	color: #d4af8e;
+	background-color: #1f1b1a;
+	display: block;
+	padding: 8px 10px;
+	letter-spacing: 1px;
+}
+
+#name
+{
+	position: absolute;
+	top: 30px;
+	left: 150px;
+	z-index: 5;
+	font-size: 2em;
+	color: #d4af8e;
+}
+
+#numberHolder
+{
+	overflow: hidden;
+	text-align: center;
+}
+
+#heightHolder
+{
+	float: left;
+	width: 50%;
+}
+
+#weightHolder
+{
+	float: right;
+	width: 50%;
+}
+
+/******************************killer selector************************/
+
+/********************Form top page. inputs and buttons and logo**********************/
+
+#container{
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+#formHolder
+{
+	display: block;
+	float: none;
+}
+
+form
+{
+	width: 100%;
+	position: relative;
+	display: block;
+}
+
+form input
+{
+	width: 78%;
+	padding: 1%;
+	border: none;
+	color: #790e0f;
+	font-size: 1.2em;
+	text-align: center;
+	float: left;
+}
+
+form p
+{
+	float: right;
+	width: 20%;
+	padding: 0;
+	color: white;
+	font-size: 1.2em;
+	line-height: 30px;
+}
+
+.resultsGone
+{
+	display: none;
+}
+
+.resultsBlock
+{
+	overflow: auto;
+	height: 190px;
+}
+
+/********************THE SEARCH RESULTS THEMSELVES**********************/
+
+.listHolder
+{
+	line-height: 35px;
+	width: 33.333333333333%;
+	display: inline-block;
+	position: relative;
+	padding: 10px 0;
+	cursor: pointer;
+	-webkit-transition: all .7s ease;
+	-moz-transition: all .7s ease;
+	-o-transition: all .7s ease;
+	transition: all .7s ease;
+	background-color: #d4af8e;
+}
+
+.listHolder:hover
+{
+	background-color: rgba(217,175,142,.7);
+}
+
+.listHolder p
+{
+	color: #5b0a0d;
+}
+
+.listHolder:hover > p
+{
+	font-weight: bold;
+}
+.listHolder img
+{
+	float: left;
+	margin-left: 10px;
+	height: 70px;
+}
+
+.inputs
+{
+	text-decoration: none;
+	color: #1f1b1a;
+	font-size: 1.2em;
+	float: left;
+	position: absolute;
+	bottom: 5px;
+	left: 70px;
+}
+
+.noResults
+{
+	text-align: center;
+	margin: 5px 0;
+	font-weight: bold;
+}
+
+.YEAR
+{
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: #ebebeb;
+}
+
+/********************THE SEARCH RESULTS THEMSELVES**********************/
+
+/********************BOTTOM MOVIE LIST**********************/
+
+#genreTitle
+{
+	display: block;
+	margin: 10px auto;
+}
+
+#movieList
+{
+	text-align: center;
+	background-color: #790e0f;
+	width: 780px;
+	margin: 0 auto;
+	overflow: auto;
+	height: 500px;
+}
+
+.listGone
+{
+	display: none;
+}
+
+#movieList h3
+{
+	background-color: #1f1b1a;
+	font-size: 2.5em;
+	color: #d4af8e;
+	margin-top: 0;
+	margin-bottom: 0px;
+	padding: 15px 0;
+	font-family: 'Kotta One', serif;
+}
+
+.whenAllShown
+{
+	width:10%;
+	text-align: center;
+	background-color: #5b0a0d;
+	display: inline-block;
+	padding: 5px 0;
+}
+
+.whenAllShown img
+{
+	border: thin solid #ccc;
+	transition: all .3s ease;
+	height: 70px;
+	-webkit-opacity:.7;
+	-moz-opacity:.7;
+	opacity: .7;
+}
+
+.whenAllShown p
+{
+	color: #d4af8e;
+}
+
+.whenAllShown img:hover
+{
+	-webkit-opacity:1;
+	-moz-opacity:1;
+	opacity: 1;
+}
+
+::-moz-scrollbar {
+      width: 15px;
+}
+
+::-moz-scrollbar-track {
+      background-color: #d4af8e;
+}
+ 
+::-moz-scrollbar-thumb {
+	height: 40px;
+	background-color: #5b0a0d;
+}
+ 
+::-moz-scrollbar-button {
+       height:0px;
+}
+ 
+::-moz-scrollbar-corner {
+	height:0px;
+}
+
+::-webkit-scrollbar {
+      width: 15px;
+}
+
+::-webkit-scrollbar-track {
+      background-color: #d4af8e;
+}
+ 
+::-webkit-scrollbar-thumb {
+	height: 40px;
+	background-color: #5b0a0d;
+}
+ 
+::-webkit-scrollbar-button {
+       height:0px;
+}
+ 
+::-webkit-scrollbar-corner {
+	height:0px;
+}
+
+/********************BOTTOM MOVIE LIST**********************/
+
+/********************DETAILS HOLDER ABOUT THE MOVIES**********************/
+
+
+#contentContainer {
+	width:100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.contentGone
+{
+	display: none;
+}
+
+#movieDetails
+{
+	background-color: #1f1b1a;
+	display: block;
+	padding: 10px 0;
+	overflow: hidden;
+}
+
+#movieDetails img
+{
+	float: left;
+  width: 200px;
+	margin-right: 20px;
+	border-radius: 5px;
+	box-shadow: 0 8px 8px -8px rgba(251,251,251,.5);
+	
+}
+
+#movieDetails p
+{
+	margin-bottom: 5px;
+	font-size: 1.3em;
+	line-height: 30px;
+	color: white;
+}
+
+.title
+{
+	color: #d4af8e;
+	text-align: center;
+	width: 100%;
+	font-size: 2.5em;
+	margin: auto;
+	font-family: 'Kotta One', serif;
+}
+
+.identify
+{
+	color: #d4af8e;
+	font-weight: bold;
+}
+
+.movieText
+{
+	text-align: left;
+}
+
+/********************Movie Picker Section**********************/
+#moviePicker
+{
+	width: 200px;
+	position:fixed;
+	top: 0;
+	left: 0;
+	color: #d4af8e;
+	text-align: center;
+	background-color: #790e0f;
+	overflow: hidden;
+}
+
+#moviePicker a
+{
+	text-decoration: none;
+	color: #d4af8e;
+}
+
+#moviePicker a:hover
+{
+	color: #1b1b1a;
+}
+
+#pickerContainer p, h3
+{
+	margin: 10px 0;
+}
+
+#pickerPoster
+{
+	position: relative;
+	overflow: hidden;
+}
+
+#infoHolder1, #infoHolder2, #infoHolder3
+{
+	width: 100%;
+}
+
+#prevButton
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+}
+
+#nextButton
+{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+}
+
+#moviePicker button img
+{
+	background-color: rgba(55,55,55,.2);
+	padding: 500% 2px;
+}
+
+#moviePicker button img:hover
+{
+	background-color: rgba(217,175,142,.5);
+}
+
+#moviePicker button
+{
+	border: 0;
+	padding: 0;
+	background: none;
+	cursor: pointer;
+}
+
+#moviePicker span
+{
+	display: inline-block;
+	font-family: 'Coming Soon', cursive;
+	background-color: #5b0a0d;
+	letter-spacing: 2px;
+	padding:8px 0;
+	width: 100%;
+}
+
+/********************DETAILS HOLDER ABOUT THE MOVIES**********************/
+
+/************BELOW ARE ALL THE QUERIES, THEY ARE SPECIFICALLY SET UP THIS WAY. THIS IS A PORTFOLIO PIECE**************/
+
+/*My Phone*/
+@media only screen and (max-width: 240px) {
+	#logo
+	{
+		position: static;
+		margin: 5px auto;
+		width: 100px;
+	}
+	
+	#container
+	{
+		width: 100%;
+	}
+	
+	#mainNav a
+	{
+		width: 100%;
+	}
+	
+	form input
+	{
+		text-align: center;
+	}
+	
+	#movieList
+	{
+		width: 100%;
+	}
+	
+	#movieList h3
+	{
+		font-size: 2em;
+		padding: 10px 0;
+	}
+	
+	.whenAllShown
+	{
+		width: 25%;
+	}
+	
+	.listHolder
+	{
+		width: 100%;
+		text-align: left;
+	}
+	
+	.inputs
+	{
+		font-size: 1em;
+		line-height: 24px;;
+	}
+	
+	.posterHolder
+	{
+		width: 100%;
+		float: none;
+		padding-top: 10px;
+		margin: 0;
+	}
+	
+	.detailHolder
+	{
+		float: none;
+		width: 96%;
+		padding: 0 2%;
+	}
+	
+	.title
+	{
+		font-size: 1.1em;
+	}
+	
+}
+
+/*Android*/
+@media only screen and (min-width:241px) and  (max-width: 266px) {
+}
+
+/*iPhone4*/
+@media only screen and (min-width: 267px) and (max-width: 320px) {
+}
+
+/*Blackberry*/
+@media only screen and (min-width: 321px) and (max-width: 360px) {
+}
+
+/*Device*/
+@media only screen and (min-width:361px) and (max-width:416px){
+}
+
+/*Galaxy S*/
+@media only screen and (min-width: 417px) and (max-width: 480px) {
+}
+
+/*Kindle*/
+@media only screen and (min-width: 481px) and (max-width: 533px) {
+}
+
+/*Nook Tablet*/
+@media only screen and (min-width: 534px) and (max-width: 600px) {
+}
+
+/*Apple Ipad*/
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+}
+
+/*Desktop1*/
+@media only screen and (min-width: 769px) and (max-width: 980px) {
+}
+
+/*Desktop2*/
+@media only screen and (min-width: 981px) and (max-width: 1280px) {
+}
+
+/*Desktop 3*/
+@media only screen and (min-width: 1367px) {
+}
