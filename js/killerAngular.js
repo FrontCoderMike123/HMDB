@@ -30,27 +30,27 @@
 		Object.defineProperty($scope,"queryFilter",{
 			get: function(){
 				var out = {};
-				out[$scope.queryBy || "Title"] = $scope.query;
+				out[$scope.queryBy || "movie_title"] = $scope.query;
 				return out;
 			}
 		});
 
 		$http.get('json/movies.json').success(function(data){
-			$scope.movies = data.Movies;
+			$scope.movies = data;
 		});
 	}]);
 
 	killers.controller('movieDetailCTRL',['$scope','$http','$stateParams',function($scope,$http,$stateParams){
 		$http.get('json/movies.json').success(function(details){
-			$scope.Title = details.Movies[$stateParams.ID].Title;
-			$scope.Image = details.Movies[$stateParams.ID].Image;
-			$scope.Year = details.Movies[$stateParams.ID].Year;
-			$scope.Rating = details.Movies[$stateParams.ID].Rating;
-			$scope.Time = details.Movies[$stateParams.ID].Time;
-			$scope.Genre = details.Movies[$stateParams.ID].Genre;
-			$scope.Director = details.Movies[$stateParams.ID].Director;
-			$scope.Stars = details.Movies[$stateParams.ID].Stars;
-			$scope.Desc = details.Movies[$stateParams.ID].Desc;
+			$scope.movie_title = details[$stateParams.ID].movie_title;
+			$scope.movie_img = details[$stateParams.ID].movie_img;
+			$scope.movie_year = details[$stateParams.ID].movie_year;
+			$scope.movie_rating = details[$stateParams.ID].movie_rating;
+			$scope.movie_time = details[$stateParams.ID].movie_time;
+			$scope.movie_genre = details[$stateParams.ID].movie_genre;
+			$scope.movie_dir = details[$stateParams.ID].movie_dir;
+			$scope.movie_stars = details[$stateParams.ID].movie_stars;
+			$scope.movie_desc = details[$stateParams.ID].movie_desc;
 		});
 	}]);
 

@@ -6,32 +6,40 @@
 <title>Horror Movie Database</title>
 <link href="css/reset.css" rel="stylesheet" type="text/css" />
 <link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/animate.css" rel="stylesheet" type="text/css" />
 <link href='https://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Kotta+One' rel='stylesheet' type='text/css'>
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 <script src="js/TweenMax.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 </head>
 <body ng-app="killers">
     <h2 class="hidden">Search for you favorite horror movie!</h2>
 
 <header>
-<a href="#/movies" id="logo">           
-    <div>
-        <object data="images/svg/logo.svg">
-            <img src="images/logo.png" alt="HMDB Logo" title="Horror Movie Database">
-        </object>
-    </div>
-</a>
-
-<a href="#/killers" id="killers">
-    <div>
-        <object data="images/svg/killers.svg">
-            <img src="images/killers.png" alt="Pick a Killer" title="Pick a Killer">
-        </object>
-    </div>
-</a>
+<nav>
+    <h2 class="hidden">Navigation</h2>
+    <ul>
+        <li>
+            <a ng-href="#/movies">           
+                <div>
+                    <object data="images/svg/logo.svg">
+                        <img src="images/logo.png" alt="Logo"/>
+                    </object>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a ng-href="#/killers">
+                <div>
+                    <object data="images/svg/killers.svg">
+                        <img src="images/killers.png" alt="Killers"/>
+                    </object>
+                </div>
+            </a>
+        </li>       
+    </ul>
+</nav>
 </header>
 
     <ui-view id="viewHolder">
@@ -39,7 +47,9 @@
 
     <script src="js/angular.min.js"></script>
     <script src="js/angular-ui-router.js"></script>
-    <script src="js/killerAngular.js"></script>
+    <script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>

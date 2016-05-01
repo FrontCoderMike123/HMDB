@@ -27,8 +27,8 @@
     <span class="stats">List Of Films</span>
     <ul>
         <li data-ng-repeat="film in Films">
-            <a ng-href="#/movies/{{$index}}">
-                <p>{{film}}</p>
+            <a ng-href="#/movies/{{film._id -1}}">
+                <p>{{film.Title}}</p>
             </a>
         </li>
     </ul>

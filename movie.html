@@ -1,13 +1,19 @@
+<button id="searchButton" ng-click="isHidden=!isHidden" title="Search for Movies"></button>
 <section id="container">
     <h2 class="hidden">Content Container</h2>
-    <form> 
-        <input id="searchBox" ng-model="query" placeholder="Horror Fan?" autocomplete="off"/>
-        <p>Found<br>{{(movies | filter:query).length}} / {{movies.length}}</p>
+    <form ng-init="isHidden=true" ng-hide="isHidden"> 
+        <input id="searchBox" type="text" ng-model="query" placeholder="What's Your Favorite Scary Movie?" autocomplete="off"/>
+        <span ng-hide="(movies | filter:queryFilter).length == 0">
+        	Movies: {{(movies | filter:queryFilter).length}} / {{movies.length}}
+        </span>
+        <span ng-show="(movies | filter:queryFilter).length == 0">No Results!</span>
     </form>
     <div id="contentContainer">
-<a ng-href="#/movies/{{movie.ID -1}}" class="listHolder" ng-repeat="movie in movies | filter:queryFilter | orderBy: 'Title'">
-    <img data-ng-src="{{movie.Thumb}}" alt="{{movie.Title}}"/>
-    <p class="inputs">{{movie.Title}} <span class="YEAR">{{movie.Year}}</span></p>
+<a ng-href="#/movies/{{movie.movie_id -1}}" class="listHolder" ng-repeat="movie in movies | filter:queryFilter | orderBy: 'movie_title'">
+    <img data-ng-src="{{movie.movie_thumb}}" alt="{{movie.movie_title}}"/>
+    <p class="inputs">{{movie.movie_title}} <span class="YEAR">{{movie.movie_year}}</span></p>
 </a>
     </div>
 </section>
+
+<!--ng-repeat="movie in movies | filter:queryFilter | orderBy: 'movie_title'"-->

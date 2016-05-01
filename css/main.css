@@ -38,24 +38,25 @@ header
 	margin: 0 auto;
 	text-align: center;
 	padding: 10px 0;
+	border-bottom: thin solid #d4af8e;
 }
 
-header a
+header ul li
 {
 	display: inline-block;
-	width: 30%;
+	width: 20%;
 	margin: 0 40px;
 }
 
 img
 {
-	max-width: 100%!important;
+	max-width: 100%;
 }
 
 object
 {
-	max-width: 100%!important;
-	pointer-events: none!important;
+	max-width: 100%;
+	pointer-events: none;
 }
 
 .hidden
@@ -93,6 +94,7 @@ object
 
 #killerImgContainer li
 {
+	position: relative;
 	width: 12.5%;
 	float: left;
 	padding: 10px 0;
@@ -150,6 +152,19 @@ object
 	width: 16%;
 	text-align: center;
 	cursor: pointer;
+}
+
+.killerCounter
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	text-align: center;
+	background-color: #d4af8e;
 }
 
 /******************************killer selector************************/
@@ -239,6 +254,7 @@ object
 	position: relative;
 	text-align: center;
 	width: 100%;
+	margin-bottom: 10px;
 }
 
 #formHolder
@@ -247,32 +263,70 @@ object
 	float: none;
 }
 
+#searchButton
+{
+	position: absolute;
+	top: 3%;
+	right: 6%;
+	width: 50px;
+	height: 50px;
+	background: none;
+	background-image: url('../images/svg/search.svg');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+}
+
+.activeButton
+{
+	width: 100px!important;
+	height: 100px!important;
+}
+
 form
 {
-	width: 100%;
+	width:100%;
 	position: relative;
-	display: block;
+	display: flex;
+	overflow: hidden;
 }
 
 form input
 {
-	width: 78%;
-	padding: 1%;
+	width: 74%;
+	padding:0 3%;
 	border: none;
-	color: #790e0f;
 	font-size: 1.2em;
-	text-align: center;
 	float: left;
+	font-weight: bold;
+	font-size: 2.3em;
+	background: none;
+	color: #d4af8e;
+	border-right: thin solid #d4af8e;
 }
 
-form p
+form:after
 {
-	float: right;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -45px;
+	width: 50px;
+	height: 100%;
+	background-color: #d4af8e;
+	transform: rotate(45deg);
+}
+
+form span
+{
+	text-align: center;
 	width: 20%;
-	padding: 0;
-	color: white;
-	font-size: 1.2em;
-	line-height: 30px;
+	align-self: center;
+	color: #d4af8e;
+	font-weight: bold;
+	font-size: 1.5em;
 }
 
 .resultsGone
@@ -308,31 +362,29 @@ form p
 	background-color: rgba(217,175,142,.7);
 }
 
-.listHolder p
-{
-	color: #5b0a0d;
-}
-
 .listHolder:hover > p
 {
-	font-weight: bold;
+	color: #ebebeb;
 }
+
 .listHolder img
 {
 	float: left;
-	margin-left: 10px;
+	margin-left: 5px;
 	height: 70px;
 }
 
 .inputs
 {
+	text-align: left;
 	text-decoration: none;
 	color: #1f1b1a;
 	font-size: 1.2em;
 	float: left;
 	position: absolute;
 	bottom: 5px;
-	left: 70px;
+	left: 60px;
+	padding-right: 10px;
 }
 
 .noResults
@@ -346,119 +398,10 @@ form p
 {
 	font-weight: bold;
 	letter-spacing: 2px;
-	color: #ebebeb;
+	color: #333;
 }
 
 /********************THE SEARCH RESULTS THEMSELVES**********************/
-
-/********************BOTTOM MOVIE LIST**********************/
-
-#genreTitle
-{
-	display: block;
-	margin: 10px auto;
-}
-
-#movieList
-{
-	text-align: center;
-	background-color: #790e0f;
-	width: 780px;
-	margin: 0 auto;
-	overflow: auto;
-	height: 500px;
-}
-
-.listGone
-{
-	display: none;
-}
-
-#movieList h3
-{
-	background-color: #1f1b1a;
-	font-size: 2.5em;
-	color: #d4af8e;
-	margin-top: 0;
-	margin-bottom: 0px;
-	padding: 15px 0;
-	font-family: 'Kotta One', serif;
-}
-
-.whenAllShown
-{
-	width:10%;
-	text-align: center;
-	background-color: #5b0a0d;
-	display: inline-block;
-	padding: 5px 0;
-}
-
-.whenAllShown img
-{
-	border: thin solid #ccc;
-	transition: all .3s ease;
-	height: 70px;
-	-webkit-opacity:.7;
-	-moz-opacity:.7;
-	opacity: .7;
-}
-
-.whenAllShown p
-{
-	color: #d4af8e;
-}
-
-.whenAllShown img:hover
-{
-	-webkit-opacity:1;
-	-moz-opacity:1;
-	opacity: 1;
-}
-
-::-moz-scrollbar {
-      width: 15px;
-}
-
-::-moz-scrollbar-track {
-      background-color: #d4af8e;
-}
- 
-::-moz-scrollbar-thumb {
-	height: 40px;
-	background-color: #5b0a0d;
-}
- 
-::-moz-scrollbar-button {
-       height:0px;
-}
- 
-::-moz-scrollbar-corner {
-	height:0px;
-}
-
-::-webkit-scrollbar {
-      width: 15px;
-}
-
-::-webkit-scrollbar-track {
-      background-color: #d4af8e;
-}
- 
-::-webkit-scrollbar-thumb {
-	height: 40px;
-	background-color: #5b0a0d;
-}
- 
-::-webkit-scrollbar-button {
-       height:0px;
-}
- 
-::-webkit-scrollbar-corner {
-	height:0px;
-}
-
-/********************BOTTOM MOVIE LIST**********************/
 
 /********************DETAILS HOLDER ABOUT THE MOVIES**********************/
 
@@ -476,10 +419,10 @@ form p
 
 #movieDetails
 {
-	background-color: #1f1b1a;
 	display: block;
 	padding: 10px 0;
 	overflow: hidden;
+	margin-bottom: 20px;
 }
 
 #movieDetails img
@@ -488,8 +431,7 @@ form p
   width: 200px;
 	margin-right: 20px;
 	border-radius: 5px;
-	box-shadow: 0 8px 8px -8px rgba(251,251,251,.5);
-	
+	margin-left: 20px;
 }
 
 #movieDetails p
@@ -497,6 +439,7 @@ form p
 	margin-bottom: 5px;
 	font-size: 1.3em;
 	line-height: 30px;
+	padding-right: 10px;
 	color: white;
 }
 
@@ -507,6 +450,7 @@ form p
 	width: 100%;
 	font-size: 2.5em;
 	margin: auto;
+	margin-bottom: 10px;
 	font-family: 'Kotta One', serif;
 }
 

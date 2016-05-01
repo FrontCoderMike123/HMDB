@@ -14,18 +14,18 @@
 		"Kills":"158 Victims",
 		"Desc":"Pamela wanted young Jason to have all of the fun and experiences the other children had, and wanted nothing more than for him to be happy. So one year she allowed little Jason to join a summer camp, at Camp Crystal Lake, Where she worked as the cook. However one fateful day, the two counselors on duty who were meant to be supervising the young campers, left their duties to have sex. While the counselors were having indulging their carnal desires, little Jason was chased down to the Lake by the other kids who threw him. However, Jason didn't know how to swim, and without any adult supervision he drowned. This was something whom his mother could not forgive. Hearing the voice of her dead son, drove her to murderous madness. She went on to kill many camp counselors, in the name of her son who rested at the bottom of the Crystal Lake. One fateful night however, a Camp Counselor by the name of Alice fought back, decapitating Pamela with her own machete. That night Jason witnessed his mother die, bringing life back into his cold rotting corpse, he would avenge his mother's death. Thus, Jason not only has suffered the abuse, ridicule and humiliation that others caused him throughout his whole childhood, also he suffered the murder of the only person who loved him: his mother. Because of this, Jason developed an animadversion so hellish that killed, without any distinction (except children), all those who invaded his territory.",
 		"Films":[
-			"Friday the 13th (1980)",
-			"Friday the 13th Part II (1981)",
-			"Friday the 13th Part III (1982)",
-			"Friday the 13th Part IV: The Final Chapter (1984)",
-			"Friday the 13th Part V: A New Beginning (1985)",
-			"Friday the 13th Part VI: Jason Lives (1986)",
-			"Friday the 13th Part VII: The New Blood (1988)",
-			"Friday the 13th Part VIII: Jason Takes Manhattan (1989) ",
-			"Jason goes to Hell: The Final Friday (1993)",
-			"Jason X (2002)",
-			"Freddy vs. Jason (2003)",
-			"Friday the 13th (2009)"
+			{"_id":"2","Title":"Friday the 13th (1980)"},
+			{"_id":"41","Title":"Friday the 13th Part II (1981)"},
+			{"_id":"42","Title":"Friday the 13th Part III (1982)"},
+			{"_id":"105","Title":"Friday the 13th Part IV: The Final Chapter (1984)"},
+			{"_id":"106","Title":"Friday the 13th Part V: A New Beginning (1985)"},
+			{"_id":"107","Title":"Friday the 13th Part VI: Jason Lives (1986)"},
+			{"_id":"108","Title":"Friday the 13th Part VII: The New Blood (1988)"},
+			{"_id":"109","Title":"Friday the 13th Part VIII: Jason Takes Manhattan (1989)"},
+			{"_id":"110","Title":"Jason goes to Hell: The Final Friday (1993)"},
+			{"_id":"111","Title":"Jason X (2002)"},
+			{"_id":"97","Title":"Freddy vs. Jason (2003)"},
+			{"_id":"112","Title":"Friday the 13th (2009)"}
 		]
 	},{
 		"ID":"2",
@@ -41,15 +41,16 @@
 		"Kills":"111 victims",
 		"Desc":"Michael Audrey Myers was born on October 19, 1957. He had an older sister named Judith and a younger sister. The family resided in a two-story house at 45 Lampkin Lane in the suburban town of Haddonfield, Illinois. By 1963, when Michael was six-years-old, he claimed to have suffered from bizarre, inexplicable nightmares and heard a voice in his head that would tell him to do things. The voices tell me to say I hate people, says Michael. His dreams were filled with images of actual events that took place several centuries ago at the dawn of the Celtic age. He dreamed of a disfigured fifteen-year-old boy named Enda who, after being rejected by his true love Deirdre, brutally murdered her during the feast of Samhain, on what would later be called Halloween night. These visions would have a greater impact on Michael later on in his life.",
 		"Films":[
-			"Halloween (1978)",
-			"Halloween II (1981)",
-			"Halloween 4: The Return of Michael Myers (1988)",
-			"Halloween 5: The Revenge of Michael Myers (1989)",
-			"Halloween 6: The Curse of Michael Myers (1995)",
-			"Halloween H20: Twenty Years Later (1998)",
-			"Halloween: Resurrection (2002)",
-			"Halloween (2007)",
-			"Halloween 2 (2008)"
+			{"_id":"1","Title":"Halloween (1978)"},
+			{"_id":"113","Title":"Halloween II (1981)"},
+			{"_id":"114","Title":"Halloween III: Season of the Witch"},
+			{"_id":"115","Title":"Halloween 4: The Return of Michael Myers (1988)"},
+			{"_id":"116","Title":"Halloween 5: The Revenge of Michael Myers (1989)"},
+			{"_id":"33","Title":"Halloween 6: The Curse of Michael Myers (1995)"},
+			{"_id":"117","Title":"Halloween H20: Twenty Years Later (1998)"},
+			{"_id":"118","Title":"Halloween: Resurrection (2002)"},
+			{"_id":"43","Title":"Halloween (2007)"},
+			{"_id":"44","Title":"Halloween 2 (2008)"}
 		]
 	},{
 		"ID":"3",
@@ -65,12 +66,12 @@
 		"Kills":"Cannibals eat a lot!",
 		"Desc":"Leatherface continuing the good work he did in the family abattoir likes to kill his victims then hang and cut them up on meat hooks. One of the most horrific scenes in the original film showed Leatherface hanging Sally up on a hook while he finished off her boyfriend. As stated above, Thomas dearly misses the work he undertook at the abattoir, perhaps the only place he felt useful and a sense of belonging. His treatment of his victims displays this disappointment as he makes excited noises and imitates the screams of his victims, like he used to do with the cattle. He swaps between knife and hammer to kill his victims, smashing in their heads as he did with the cattle, then chopping up the bodies and passing on the meat to his brother Drayton.",
 		"Films":[
-			"The Texas Chainsaw Massacre (1974)",
-			"The Texas Chainsaw Massacre 2 (1986)",
-			"Leatherface: Texas Chainsaw Massacre III (1990)",
-			"The Texas Chainsaw Massacre: The Next Generation (1994/1997)",
-			"The Texas Chainsaw Massacre (2003)",
-			"The Texas Chainsaw Massacre: The Beginning (2006)"
+			{"_id":"8","Title":"The Texas Chainsaw Massacre (1974)"},
+			{"_id":"119","Title":"The Texas Chainsaw Massacre 2 (1986)"},
+			{"_id":"120","Title":"Leatherface: Texas Chainsaw Massacre III (1990)"},
+			{"_id":"121","Title":"The Texas Chainsaw Massacre: The Next Generation (1994/1997)"},
+			{"_id":"64","Title":"The Texas Chainsaw Massacre (2003)"},
+			{"_id":"65","Title":"The Texas Chainsaw Massacre: The Beginning (2006)"}
 		]
 	},{
 		"ID":"4",
@@ -86,15 +87,15 @@
 		"Kills":"43 victims",
 		"Desc":"Amanda Krueger was a nurse at the local state hospital. When counting the inmates before the lock down for the Christmas holiday, Amanda was accidentally locked in a room of 100 inmates. When everyone found her, she was beaten and raped and with child. She gave birth to Fred Krueger. As a child, Freddy was tormented by other children driving him further insane. The other school kids often referred to him as the Son of a Hundred Maniacs. Freddy was an easy target for bullies and was often alone on the playground. He took pleasure in torturing small animals like mice and hamsters. Life at home wasn't the easiest, especially with his often drunk and abusive father. Freddy eventually snapped and stopped feeling pain. He was 18 when he murdered his father. He eventually got married to Loretta, and had a child of their own, during which he killed many teenagers under the alias of the Springwood Slasher. When his wife finds out about his secret, he kills her in front of their young daughter, Kathryn. Freddy tells the young girl that mommy needed to take her medicine and makes his daughter promise to keep his statement secret, but she doesn't listen. During the trial, Fred's lawyer's found an error in the search warrants. The judge was forced to release Krueger on the spot. When the judge lets him walk, the friends and family of the murdered teenagers take matters into their own hands. They burned him alive in his boiler/lair. While his whole place was burning down around him 3 dream demons offered him the chance of another life in the fear and dream of teenagers for eternity, then the real fun began! And every time Freddy is about to appear, three girls and a boy show up jumping rope (probably his first few victims) and singing 'One, two, Freddy's coming for you. Three, four, better lock your door. Five, six, grab your crucifix. Seven, eight, gonna stay up late. Nine, ten, ever sleep again.'",
 		"Films":[
-			"A Nightmare on Elm Street (1984)",
-			"A Nightmare on Elm Street 2: Freddys Revenge (1985)",
-			"A Nightmare on Elm Street 3: Dream Warriors (1987)",
-			"A Nightmare on Elm Street 4: The Dream Master (1988)",
-			"A Nightmare on Elm Street 5: The Dream Child (1989)",
-			"Freddy is Dead: The Final Nightmare (1991)",
-			"New Nightmare (1994)",
-			"Freddy vs. Jason (2003)",
-			"A Nightmare on Elm Street (2010)"
+			{"_id":"6","Title":"A Nightmare on Elm Street (1984)"},
+			{"_id":"45","Title":"A Nightmare on Elm Street 2: Freddys Revenge (1985)"},
+			{"_id":"201","Title":"A Nightmare on Elm Street 3: Dream Warriors (1987)"},
+			{"_id":"202","Title":"A Nightmare on Elm Street 4: The Dream Master (1988)"},
+			{"_id":"203","Title":"A Nightmare on Elm Street 5: The Dream Child (1989)"},
+			{"_id":"204","Title":"Freddy is Dead: The Final Nightmare (1991)"},
+			{"_id":"35","Title":"New Nightmare (1994)"},
+			{"_id":"97","Title":"Freddy vs. Jason (2003)"},
+			{"_id":"205","Title":"A Nightmare on Elm Street (2010)"}
 		]
 	},{
 		"ID":"5",
@@ -110,12 +111,12 @@
 		"Kills":"73 victims",
 		"Desc":"In his human form Chucky is a caucasian male with shoulder length black hair and blue eyes. However this changes once he enters the doll. He has long, red hair and freckles, along with blue eyes. He wears blue overalls with the logo 'Good Guys', a striped, multi-colored striped shirt, and red converses. Throughout the first three films and for most of the sixth film, he looks like an everyday child's doll, but with the fourth film (Bride of Chucky) came his famous scars and stitches, as well as a bloody eye. This appearance came about after he was chopped to bits at the end of the third movie. In the sixth film (Curse of Chucky), he wears a rubber mask over his face to conceal his afflictions and pass himself off as a normal toy. However, the mask was taken off by the character Barb and his actual look is revealed.",
 		"Films":[
-			"Childs Play (1988)",
-			"Childs Play 2 (1990)",
-			"Childs Play 3 (1991)",
-			"Bride of Chucky (1998)",
-			"Seed of Chucky (2004)",
-			"Curse of Chucky (2013)"
+			{"_id":"59","Title":"Child's Play (1988)"},
+			{"_id":"206","Title":"Child's Play 2 (1990)"},
+			{"_id":"207","Title":"Child's Play 3 (1991)"},
+			{"_id":"208","Title":"Bride of Chucky (1998)"},
+			{"_id":"209","Title":"Seed of Chucky (2004)"},
+			{"_id":"210","Title":"Curse of Chucky (2013)"}
 		]
 	},{
 		"ID":"6",
@@ -131,13 +132,13 @@
 		"Kills":"82 victims",
 		"Desc":"The producers of the Saw films have fought to differentiate the Jigsaw Killer from other horror film killers. Darren Lynn Bousman, the director of Saw II, Saw III, and Saw IV, has stated on the character's role 'He's not Jason or Freddy. He's not even Hannibal Lecter. He's a person with extreme beliefs and he really thinks he's making a difference. He's a vigilante if anything. He thinks he's making a difference.' Tobin Bell, the actor who plays Jigsaw, describes his character's role as being more of a scientist or engineer and he thinks very specifically and very pragmatically. About Jigsaw's games being detail oriented, Bell said: My sense is that Jigsaw is so detail oriented that I think he thinks in terms of worst case scenario. I think he's a very good judge of character, so his sense that, for example, that Detective Matthews was going to play right into his trap, which he did, was right on. Now, it seems to me that he's always got a second plan in place. And there's probably been a number of second plans. I mean, we've only seen three movies. Maybe there are six more somewhere where he failed, where something didn't play out Speaking about playing the character Bell stated that you have to think of someone like Jigsaw from a very specific point of view. He doesn't view himself as some kind of diabolical psychotic. You know there's a little bit of evil in everyone. It just gets carried further. Most of us have some sort of moral fiber that restricts that. Some framework. And then others because of their lives and what happens to them, the thing develops in some other way.",
 		"Films":[
-			"Saw (2004)",
-			"Saw II (2005)",
-			"Saw III (2006)",
-			"Saw IV (2007)",
-			"Saw V (2008)",
-			"Saw VI (2009)",
-			"Saw 3D (2010)"
+			{"_id":"29","Title":"Saw (2004)"},
+			{"_id":"140","Title":"Saw II (2005)"},
+			{"_id":"141","Title":"Saw III (2006)"},
+			{"_id":"142","Title":"Saw IV (2007)"},
+			{"_id":"143","Title":"Saw V (2008)"},
+			{"_id":"144","Title":"Saw VI (2009)"},
+			{"_id":"145","Title":"Saw 3D (2010)"}
 		]
 	},{
 		"ID":"7",
@@ -153,15 +154,15 @@
 		"Kills":"80 victims",
 		"Desc":"Pinhead is one of the leaders of the Cenobites, formerly humans but transformed into creatures which reside in a extradimensional realm who travel to Earth through a puzzle box called the Lament Configuration in order to harvest human souls. His origins and the nature of the Cenobites vary depending upon the medium: While the character began as an amoral entity blindly devoted to the practice of experimental sadomasochism, later depictions have portrayed him as explicitly evil and even demonic in origin. The character's appearance in 1987's Hellraiser marked a significant departure from the standard 1980s depiction of horror movie villains, who tended to either be completely mute, or provide glib commentary while killing their victims. Rather, Pinhead was depicted as quiet yet articulate and intelligent, drawing influence from classical cinematic depictions of Count Dracula",
 		"Films":[
-			"Hellraiser (1987)",
-			"Hellbound: Hellraiser II (1988)",
-			"Hellraiser III: Hell on Earth (1992)",
-			"Hellraiser: Bloodline (1996)",
-			"Hellraiser: Inferno (2000)",
-			"Hellraiser: Hellseeker (2002)",
-			"Hellraiser: Deader (2005)",
-			"Hellraiser: Hellworld (2005)",
-			"Hellraiser: Revelations (2011)"
+			{"_id":"11","Title":"Hellraiser (1987)"},
+			{"_id":"211","Title":"Hellbound: Hellraiser II (1988)"},
+			{"_id":"212","Title":"Hellraiser III: Hell on Earth (1992)"},
+			{"_id":"213","Title":"Hellraiser: Bloodline (1996)"},
+			{"_id":"214","Title":"Hellraiser: Inferno (2000)"},
+			{"_id":"215","Title":"Hellraiser: Hellseeker (2002)"},
+			{"_id":"216","Title":"Hellraiser: Deader (2005)"},
+			{"_id":"217","Title":"Hellraiser: Hellworld (2005)"},
+			{"_id":"218","Title":"Hellraiser: Revelations (2011)"}
 		]
 	},{
 		"ID":"8",
@@ -177,10 +178,10 @@
 		"Kills":"41 victims",
 		"Desc":"The Ghostface costume is the outfit worn by the main antagonists of the Scream franchise, consisting of a rubber white mask with black eyes, nose and mouth and a black, cloth-like material, hooded-robe with faux-tatters draping from the arms and a spiked-trim to the base of the outfit. In the movie, the costume is considered common and easily purchasable making identifying the buyers difficult and creating the possibility for anyone to be the killer.",
 		"Films":[
-			"Scream (1996)",
-			"Scream 2 (1997)",
-			"Scream 3 (2000)",
-			"Scream 4 (2011)"
+			{"_id":"3","Title":"Scream (1996)"},
+			{"_id":"132","Title":"Scream 2 (1997)"},
+			{"_id":"133","Title":"Scream 3 (2000)"},
+			{"_id":"134","Title":"Scream 4 (2011)"}
 		]
 	}]
 }

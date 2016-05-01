@@ -2,7 +2,7 @@
     <h3>Choose Your Favorite Slasher!</h3>
         <ul>
             <li data-ng-repeat="killer in killers">
-                <a ng-href="#/killers/{{$index}}">
+                <a href="#/killers/{{$index}}">
                     <img data-ng-src="{{killer.Thumb}}" alt="{{killer.Name}}"/>
                     <span>{{killer.Name}}</span>
                 </a>

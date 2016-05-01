@@ -1,72 +1,94 @@
-(function() {
+(function(){
 
-  var searchRequest;
-  var searchField = document.querySelector("#searchBox");
-  var theList = document.querySelector("#movieList");
-  var infoContainer = document.querySelector("#contentContainer");
-  var killerCon = document.querySelector("#killerHolder");
+	var killers = angular.module('killers',['ui.router','ngStorage']);
 
-  //ALL FADING FUNCTION//
+	killers.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$urlRouterProvider){
+		$stateProvider.state('Movies',{
+			url:'/movies',
+			templateUrl:'movie.html',
+			controller:'movieCTRL'
+		});
+		$stateProvider.state('Movie',{
+			url:'/movies/:ID',
+			templateUrl:'movieDetails.html',
+			controller:'movieDetailCTRL'
+		});
+		$stateProvider.state('Killers',{
+			url:'/killers',
+			templateUrl:'killers.html',
+			controller:'killerCTRL'
+		});
+		$stateProvider.state('Killer',{
+			url:'/killers/:ID',
+			templateUrl:'killerDetails.html',
+			controller:'killerDetailCTRL'
+		});
+		$urlRouterProvider.otherwise('/movies');
+	}]);
 
-  function fadeInEverything() {
-    var everything = [allMovies];
-    TweenMax.staggerFromTo(everything, 1, {opacity:0}, {opacity:1}, 0.2);
-  }
+	killers.controller('movieCTRL',['$scope','$http',function($scope,$http){
+		Object.defineProperty($scope,"queryFilter",{
+			get: function(){
+				var movies = {};
+				movies[$scope.queryBy || "movie_title"] = $scope.query;
+				return movies;
+			}
+		});
 
-  //ALL FADING FUNCTION//
+		$http.get('json/movies.json').success(function(data){
+			$scope.movies = data.Movies;
+		});
 
-  function showResults(str) {
-    searchRequest = createRequest();
-    if(searchRequest === null) {
-      alert("Please upgrade to a modern browser!");
-      return;
-    }
-    var url="searchMovie.php?searchstring="+str;
-    searchRequest.onreadystatechange = searchStatus;
-    searchRequest.open("GET", url, true);
-    searchRequest.send(null);
-  }
+		var button = document.querySelector('#searchButton');
+		var clicked = false;
+		button.addEventListener('click', function() {
+			clicked = !clicked;
+			if(!clicked){
+				button.classList.toggle('activeButton');
+			}else{
+				button.classList.toggle('activeButton');
+			}
+		},false);
+	}]);
 
-  function searchStatus() {
-    if(searchRequest.readyState === 4 || searchRequest.readyState === "complete") {
-      document.querySelector("#searchResults").innerHTML = searchRequest.responseText;
-      document.querySelector("#searchResults").classList.add("resultsBlock");
-    }
-  }
+	killers.controller('movieDetailCTRL',['$scope','$http','$stateParams',function($scope,$http,$stateParams){
+		$http.get('json/movies.json').success(function(details){
+			$scope.movie_title = details.Movies[$stateParams.ID].movie_title;
+			$scope.movie_img = details.Movies[$stateParams.ID].movie_img;
+			$scope.movie_year = details.Movies[$stateParams.ID].movie_year;
+			$scope.movie_rating = details.Movies[$stateParams.ID].movie_rating;
+			$scope.movie_time = details.Movies[$stateParams.ID].movie_time;
+			$scope.movie_genre = details.Movies[$stateParams.ID].movie_genre;
+			$scope.movie_dir = details.Movies[$stateParams.ID].movie_dir;
+			$scope.movie_stars = details.Movies[$stateParams.ID].movie_stars;
+			$scope.movie_desc = details.Movies[$stateParams.ID].movie_desc;
+		});
+	}]);
+
+	killers.controller('killerCTRL',['$scope','$http','$localStorage',function($scope,$http,$localStorage){
+		$http.get('json/killers.json').success(function(data){
+			$scope.killers = data.Killers;
+		});
+
+		$scope.$storage = $localStorage.$default({ userFav: {} });
+	}]);
+
+	killers.controller('killerDetailCTRL',['$scope','$http','$stateParams',function($scope,$http,$stateParams){
+		$http.get('json/killers.json').success(function(details){
+			$scope.Name = details.Killers[$stateParams.ID].Name;
+			$scope.Photo = details.Killers[$stateParams.ID].Photo;
+			$scope.Famous = details.Killers[$stateParams.ID].Famous;
+			$scope.Passed = details.Killers[$stateParams.ID].Passed;
+			$scope.Victim = details.Killers[$stateParams.ID].Victim;
+			$scope.Height = details.Killers[$stateParams.ID].Height;
+			$scope.Weight = details.Killers[$stateParams.ID].Weight;
+			$scope.Weapon = details.Killers[$stateParams.ID].Weapon;
+			$scope.Kills = details.Killers[$stateParams.ID].Kills;
+			$scope.Desc = details.Killers[$stateParams.ID].Desc;
+			$scope.Films = details.Killers[$stateParams.ID].Films;
+			$scope._id = details.Killers[$stateParams.ID]._id;
+			//console.log($scope.Films);
+		});
+	}]);
+
 })();
-  
-  var killerCon = document.querySelector("#killerHolder");
-  var infoContainer = document.querySelector("#contentContainer");
-  var theList = document.querySelector("#movieList");
-
-  function fadeInResults() {
-    var results = [infoContainer];
-    TweenMax.staggerFromTo(results, 1, {opacity:0}, {opacity:1}, 0.2);
-  }
-
-  function displayInfo(id) {
-    var displayRequest;
-    function displayMovie(id) {
-      displayRequest = createRequest();
-      if(displayRequest === null) {
-        alert("Please update your browser dammit!");
-        return;
-      }
-      var url = "displayMovie.php?movid=" + id;
-      displayRequest.onreadystatechange = displayStatus;
-      displayRequest.open("GET", url, true);
-      displayRequest.send(null);
-    }
-
-    function displayStatus() {
-      if(displayRequest.readyState === 4 || displayRequest.readyState === "complete") {
-        document.querySelector("#contentContainer").innerHTML = displayRequest.responseText;
-        document.querySelector("#contentContainer").style="height:auto";
-        theList.classList.add("listGone");
-        infoContainer.classList.remove("contentGone");
-        killerCon.classList.remove("visible");
-      }
-    }
-    displayMovie(id);
-    fadeInResults();
-  }
