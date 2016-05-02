@@ -1,6 +1,6 @@
 (function(){
 
-	var killers = angular.module('killers',['ui.router','ngStorage']);
+	var killers = angular.module('killers',['ui.router']);
 
 	killers.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$urlRouterProvider){
 		$stateProvider.state('Movies',{
@@ -65,12 +65,10 @@
 		});
 	}]);
 
-	killers.controller('killerCTRL',['$scope','$http','$localStorage',function($scope,$http,$localStorage){
+	killers.controller('killerCTRL',['$scope','$http',function($scope,$http){
 		$http.get('json/killers.json').success(function(data){
 			$scope.killers = data.Killers;
 		});
-
-		$scope.$storage = $localStorage.$default({ userFav: {} });
 	}]);
 
 	killers.controller('killerDetailCTRL',['$scope','$http','$stateParams',function($scope,$http,$stateParams){
