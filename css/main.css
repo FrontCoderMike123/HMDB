@@ -66,18 +66,6 @@ object
 
 /******************************the real way selector************************/
 
-.img-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
- 
-.img-list li {
-  position: relative;
-	text-align: center;
-}
-
 #killerImgContainer
 {
 	width: 100%;
@@ -97,45 +85,44 @@ object
 	position: relative;
 	width: 12.5%;
 	float: left;
-	padding: 10px 0;
 	border-radius: 5px;
 	-webkit-transition: all .5s ease;
 	-moz-transition: all .5s ease;
 	-o-transition: all .5s ease;
 	transition: all .5s ease;
-}
-
-#killerImgContainer li:hover
-{
-	background-color: rgba(217,175,142,.7);
 }
 
 #killerImgContainer img
 {
 	margin: auto;
 	display: block;
-	border-radius: 5px;
-	-webkit-opacity: .8;
-	-moz-opacity: .8;
-	-o-opacity: .8;
-	opacity: .8;
-	-webkit-transition: all .5s ease;
-	-moz-transition: all .5s ease;
-	-o-transition: all .5s ease;
-	transition: all .5s ease;
 }
 
-#killerImgContainer img:hover
+#killerImgContainer li:hover .killerName
 {
-	-webkit-opacity: 1;
-	-moz-opacity: 1;
-	-o-opacity: 1;
 	opacity: 1;
+	-webkit-opacity:1;
+	-o-opacity:1;
 }
 
-#killerImgContainer span
+.killerName
 {
-  color: white;	
+	font-size: 1.2em;
+	font-weight: bold;
+  color: #d4af8e;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding-top: 70px;
+	background-color: rgba(91,10,13,.8);
+	opacity: 0;
+	-webkit-opacity:0;
+	-o-opacity:0;
+	transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
 }
 
 #showKillerButton
@@ -197,6 +184,8 @@ object
 {
 	color: #f4af8e;
 	text-decoration: none;
+	border-left: 5px solid #1f1b1a;
+	display: block;
 }
 
 #killerHolder p
@@ -281,8 +270,9 @@ object
 
 .activeButton
 {
-	width: 100px!important;
-	height: 100px!important;
+	width: 75px!important;
+	height: 75px!important;
+  background-image: url('../images/svg/searchNone.svg')!important;
 }
 
 form
@@ -432,6 +422,7 @@ form span
 	margin-right: 20px;
 	border-radius: 5px;
 	margin-left: 20px;
+	margin-bottom: 20px;
 }
 
 #movieDetails p
@@ -556,11 +547,22 @@ form span
 
 /*My Phone*/
 @media only screen and (max-width: 240px) {
-	#logo
+	#viewHolder
 	{
-		position: static;
-		margin: 5px auto;
-		width: 100px;
+		width: 100%;
+		margin: 0;
+		border-radius: 0;
+	}
+	
+	header
+	{
+		border-bottom: none;
+		width: 100%;
+	}
+	
+	header ul li
+	{
+		margin: 0 20px;
 	}
 	
 	#container
@@ -568,30 +570,593 @@ form span
 		width: 100%;
 	}
 	
-	#mainNav a
+	#searchButton
 	{
-		width: 100%;
+		position: static;
+		display: block;
+		margin: auto;
+		margin-bottom: 10px;
+		width: 30px;
+		height: 30px;
+	}
+	
+	.activeButton
+	{
+		width: 30px!important;
+		height: 30px!important;
+	}
+	
+	form
+	{
+		display: block;
 	}
 	
 	form input
 	{
+		width: 98%;
+		padding: 1%;
+	  font-size: .7em;
+		text-align: center;
+		float: none;
+		border-right: none;
+		border-top: thin solid #d4af8e;
+		margin-bottom: 10px;
+	}
+	
+	form:after
+	{
+		display: none;
+	}
+	
+	form span
+	{
+		width: 100%;
+		float: none;
+		font-size: 1em;
+		margin-bottom: 10px;
+		display: block;
+	}
+	
+	.listHolder
+	{
+		width: 100%;
+		text-align: left;
+	}
+	
+	.inputs
+	{
+		font-size: .8em;
+		line-height: 24px;;
+	}
+	
+	.title
+	{
+		font-size: 1em;
+		padding: 0 2%;
+		width: 96%;
+	}
+	
+	#movieDetails
+	{
+		margin: 0;
+	}
+	
+	#movieDetails img
+	{
+		margin: 0 auto;
+   display: block;
+		float: none;
+	}
+	
+	#movieDetails p
+	{
+		width: 96%;
+		display: block;
+		padding: 0 2%;
+		float: none;
+		font-size: 1em;
 		text-align: center;
 	}
 	
-	#movieList
+	.identify
+	{
+		display: block;
+		text-align: center;
+		padding: 5px 0 0 0;
+		border-bottom: thin solid #d4af8e;
+	}
+	
+	#killerImgContainer h3
+	{
+		font-size: 1em;
+	}
+	
+	#killerImgContainer li
+	{
+		width: 50%;
+	}
+	
+	.killerName
+	{
+		display: block;
+		position: static;
+		padding: 10px 0;
+		font-size: .8em;
+		opacity: 1;
+		-webkit-opacity:1;
+		-o-opacity:1;
+	}
+	
+	#killerHolder
+	{
+		margin: 0;
+		width: 100%;
+		padding: 0;
+	}
+	
+	#killerHolder img
+	{
+		width: 100%;
+		float: none;
+		margin: auto;
+		display: block;
+	}
+	
+	#name
+	{
+		left: 5px;
+		top: 0;
+		font-size: 1em;
+	}
+	
+	.stats
+	{
+		font-size: 1em;
+	}
+	
+	#killerHolder p
+	{
+		font-size: 1em;
+	}
+	
+	#killerHolder a
+	{
+		border-left: none;
+		border-bottom: thin solid #1f1b1a;
+	}
+}
+
+/*Android*/
+@media only screen and (min-width:241px) and  (max-width: 266px) {
+		#viewHolder
+	{
+		width: 100%;
+		margin: 0;
+		border-radius: 0;
+	}
+	
+	header
+	{
+		border-bottom: none;
+		width: 100%;
+	}
+	
+	header ul li
+	{
+		margin: 0 20px;
+	}
+	
+	#container
 	{
 		width: 100%;
 	}
 	
-	#movieList h3
+	#searchButton
 	{
-		font-size: 2em;
-		padding: 10px 0;
+		position: static;
+		display: block;
+		margin: auto;
+		margin-bottom: 10px;
+		width: 30px;
+		height: 30px;
 	}
 	
-	.whenAllShown
+	.activeButton
 	{
-		width: 25%;
+		width: 30px!important;
+		height: 30px!important;
+	}
+	
+	form
+	{
+		display: block;
+	}
+	
+	form input
+	{
+		width: 98%;
+		padding: 1%;
+	  font-size: .7em;
+		text-align: center;
+		float: none;
+		border-right: none;
+		border-top: thin solid #d4af8e;
+		margin-bottom: 10px;
+	}
+	
+	form:after
+	{
+		display: none;
+	}
+	
+	form span
+	{
+		width: 100%;
+		float: none;
+		font-size: 1em;
+		margin-bottom: 10px;
+		display: block;
+	}
+	
+	.listHolder
+	{
+		width: 100%;
+		text-align: left;
+	}
+	
+	.inputs
+	{
+		font-size: .8em;
+		line-height: 24px;;
+	}
+	
+	.title
+	{
+		font-size: 1em;
+		padding: 0 2%;
+		width: 96%;
+	}
+	
+	#movieDetails
+	{
+		margin: 0;
+	}
+	
+	#movieDetails img
+	{
+		margin: 0 auto;
+   display: block;
+		float: none;
+	}
+	
+	#movieDetails p
+	{
+		width: 96%;
+		display: block;
+		padding: 0 2%;
+		float: none;
+		font-size: 1em;
+		text-align: center;
+	}
+	
+	.identify
+	{
+		display: block;
+		text-align: center;
+		padding: 5px 0 0 0;
+		border-bottom: thin solid #d4af8e;
+	}
+	
+	#killerImgContainer h3
+	{
+		font-size: 1em;
+	}
+	
+	#killerImgContainer li
+	{
+		width: 50%;
+	}
+	
+	.killerName
+	{
+		display: block;
+		position: static;
+		padding: 10px 0;
+		font-size: .8em;
+		opacity: 1;
+		-webkit-opacity:1;
+		-o-opacity:1;
+	}
+	
+	#killerHolder
+	{
+		margin: 0;
+		width: 100%;
+		padding: 0;
+	}
+	
+	#killerHolder img
+	{
+		width: 100%;
+		float: none;
+		margin: auto;
+		display: block;
+	}
+	
+	#name
+	{
+		left: 5px;
+		top: 0;
+		font-size: 1em;
+	}
+	
+	.stats
+	{
+		font-size: 1em;
+	}
+	
+	#killerHolder p
+	{
+		font-size: 1em;
+	}
+	
+	#killerHolder a
+	{
+		border-left: none;
+		border-bottom: thin solid #1f1b1a;
+	}
+}
+
+/*iPhone4*/
+@media only screen and (min-width: 267px) and (max-width: 320px) {
+		#viewHolder
+	{
+		width: 100%;
+		margin: 0;
+		border-radius: 0;
+	}
+	
+	header
+	{
+		border-bottom: none;
+		width: 100%;
+	}
+	
+	header ul li
+	{
+		margin: 0 20px;
+	}
+	
+	#container
+	{
+		width: 100%;
+	}
+	
+	#searchButton
+	{
+		position: static;
+		display: block;
+		margin: auto;
+		margin-bottom: 10px;
+		width: 30px;
+		height: 30px;
+	}
+	
+	.activeButton
+	{
+		width: 30px!important;
+		height: 30px!important;
+	}
+	
+	form
+	{
+		display: block;
+	}
+	
+	form input
+	{
+		width: 98%;
+		padding: 1%;
+	  font-size: .7em;
+		text-align: center;
+		float: none;
+		border-right: none;
+		border-top: thin solid #d4af8e;
+		margin-bottom: 10px;
+	}
+	
+	form:after
+	{
+		display: none;
+	}
+	
+	form span
+	{
+		width: 100%;
+		float: none;
+		font-size: 1em;
+		margin-bottom: 10px;
+		display: block;
+	}
+	
+	.listHolder
+	{
+		width: 100%;
+		text-align: left;
+	}
+	
+	.inputs
+	{
+		font-size: .8em;
+		line-height: 24px;;
+	}
+	
+	.title
+	{
+		font-size: 1em;
+		padding: 0 2%;
+		width: 96%;
+	}
+	
+	#movieDetails
+	{
+		margin: 0;
+	}
+	
+	#movieDetails img
+	{
+		margin: 0 auto;
+   display: block;
+		float: none;
+	}
+	
+	#movieDetails p
+	{
+		width: 96%;
+		display: block;
+		padding: 0 2%;
+		float: none;
+		font-size: 1em;
+		text-align: center;
+	}
+	
+	.identify
+	{
+		display: block;
+		text-align: center;
+		padding: 5px 0 0 0;
+		border-bottom: thin solid #d4af8e;
+	}
+	
+	#killerImgContainer h3
+	{
+		font-size: 1em;
+	}
+	
+	#killerImgContainer li
+	{
+		width: 50%;
+	}
+	
+	.killerName
+	{
+		display: block;
+		position: static;
+		padding: 10px 0;
+		font-size: .8em;
+		opacity: 1;
+		-webkit-opacity:1;
+		-o-opacity:1;
+	}
+	
+	#killerHolder
+	{
+		margin: 0;
+		width: 100%;
+		padding: 0;
+	}
+	
+	#killerHolder img
+	{
+		width: 100%;
+		float: none;
+		margin: auto;
+		display: block;
+	}
+	
+	#name
+	{
+		left: 5px;
+		top: 0;
+		font-size: 1em;
+	}
+	
+	.stats
+	{
+		font-size: 1em;
+	}
+	
+	#killerHolder p
+	{
+		font-size: 1em;
+	}
+	
+	#killerHolder a
+	{
+		border-left: none;
+		border-bottom: thin solid #1f1b1a;
+	}
+}
+
+/*Blackberry*/
+@media only screen and (min-width: 321px) and (max-width: 360px) {
+		#viewHolder
+	{
+		width: 100%;
+		margin: 0;
+		border-radius: 0;
+	}
+	
+	header
+	{
+		border-bottom: none;
+		width: 100%;
+	}
+	
+	header ul li
+	{
+		margin: 0 10px;
+		width: 40%;
+	}
+	
+	#container
+	{
+		width: 100%;
+	}
+	
+	#searchButton
+	{
+		position: static;
+		display: block;
+		margin: auto;
+		margin-bottom: 10px;
+	}
+	
+	.activeButton
+	{
+		width: 50px!important;
+		height: 50px!important;
+	}
+	
+	form
+	{
+		display: block;
+	}
+	
+	form input
+	{
+		width: 98%;
+		padding: 1%;
+	  font-size: 1em;
+		text-align: center;
+		float: none;
+		border-right: none;
+		border-top: thin solid #d4af8e;
+		margin-bottom: 10px;
+	}
+	
+	form:after
+	{
+		display: none;
+	}
+	
+	form span
+	{
+		width: 100%;
+		float: none;
+		font-size: 1em;
+		margin-bottom: 10px;
+		display: block;
 	}
 	
 	.listHolder
@@ -606,62 +1171,1116 @@ form span
 		line-height: 24px;;
 	}
 	
-	.posterHolder
+	.title
 	{
-		width: 100%;
-		float: none;
-		padding-top: 10px;
+		font-size: 1em;
+		padding: 0 2%;
+		width: 96%;
+	}
+	
+	#movieDetails
+	{
 		margin: 0;
 	}
 	
-	.detailHolder
+	#movieDetails img
 	{
+		margin: 0 auto;
+   display: block;
 		float: none;
-		width: 96%;
-		padding: 0 2%;
 	}
 	
-	.title
+	#movieDetails p
 	{
-		font-size: 1.1em;
+		width: 96%;
+		display: block;
+		padding: 0 2%;
+		float: none;
+		font-size: 1em;
+		text-align: center;
 	}
 	
-}
-
-/*Android*/
-@media only screen and (min-width:241px) and  (max-width: 266px) {
-}
-
-/*iPhone4*/
-@media only screen and (min-width: 267px) and (max-width: 320px) {
-}
-
-/*Blackberry*/
-@media only screen and (min-width: 321px) and (max-width: 360px) {
+	.identify
+	{
+		display: block;
+		text-align: center;
+		padding: 5px 0 0 0;
+		border-bottom: thin solid #d4af8e;
+	}
+	
+	#killerImgContainer h3
+	{
+		font-size: 1.2em;
+	}
+	
+	#killerImgContainer li
+	{
+		width: 50%;
+	}
+	
+	.killerName
+	{
+		display: block;
+		position: static;
+		padding: 10px 0;
+		font-size: 1em;
+		opacity: 1;
+		-webkit-opacity:1;
+		-o-opacity:1;
+	}
+	
+	#killerHolder
+	{
+		margin: 0;
+		width: 100%;
+		padding: 0;
+	}
+	
+	#killerHolder img
+	{
+		width: 100%;
+		float: none;
+		margin: auto;
+		display: block;
+	}
+	
+	#name
+	{
+		left: 5px;
+		top: 0;
+		font-size: 1em;
+	}
+	
+	.stats
+	{
+		font-size: 1em;
+	}
+	
+	#killerHolder p
+	{
+		font-size: 1em;
+	}
+	
+	#killerHolder a
+	{
+		border-left: none;
+		border-bottom: thin solid #1f1b1a;
+	}
 }
 
 /*Device*/
 @media only screen and (min-width:361px) and (max-width:416px){
+			#viewHolder
+	{
+		width: 100%;
+		margin: 0;
+		border-radius: 0;
+	}
+	
+	header
+	{
+		border-bottom: none;
+		width: 100%;
+	}
+	
+	header ul li
+	{
+		margin: 0 10px;
+		width: 40%;
+	}
+	
+	#container
+	{
+		width: 100%;
+	}
+	
+	#searchButton
+	{
+		position: static;
+		display: block;
+		margin: auto;
+		margin-bottom: 10px;
+	}
+	
+	.activeButton
+	{
+		width: 50px!important;
+		height: 50px!important;
+	}
+	
+	form
+	{
+		display: block;
+	}
+	
+	form input
+	{
+		width: 98%;
+		padding: 1%;
+	  font-size: 1em;
+		text-align: center;
+		float: none;
+		border-right: none;
+		border-top: thin solid #d4af8e;
+		margin-bottom: 10px;
+	}
+	
+	form:after
+	{
+		display: none;
+	}
+	
+	form span
+	{
+		width: 100%;
+		float: none;
+		font-size: 1em;
+		margin-bottom: 10px;
+		display: block;
+	}
+	
+	.listHolder
+	{
+		width: 100%;
+		text-align: left;
+	}
+	
+	.inputs
+	{
+		font-size: 1em;
+		line-height: 24px;;
+	}
+	
+	.title
+	{
+		font-size: 1em;
+		padding: 0 2%;
+		width: 96%;
+	}
+	
+	#movieDetails
+	{
+		margin: 0;
+	}
+	
+	#movieDetails img
+	{
+		margin: 0 auto;
+   display: block;
+		float: none;
+	}
+	
+	#movieDetails p
+	{
+		width: 96%;
+		display: block;
+		padding: 0 2%;
+		float: none;
+		font-size: 1em;
+		text-align: center;
+	}
+	
+	.identify
+	{
+		display: block;
+		text-align: center;
+		padding: 5px 0 0 0;
+		border-bottom: thin solid #d4af8e;
+	}
+	
+	#killerImgContainer h3
+	{
+		font-size: 1.2em;
+	}
+	
+	#killerImgContainer li
+	{
+		width: 50%;
+	}
+	
+	.killerName
+	{
+		display: block;
+		position: static;
+		padding: 10px 0;
+		font-size: 1em;
+		opacity: 1;
+		-webkit-opacity:1;
+		-o-opacity:1;
+	}
+	
+	#killerHolder
+	{
+		margin: 0;
+		width: 100%;
+		padding: 0;
+	}
+	
+	#killerHolder img
+	{
+		width: 100%;
+		float: none;
+		margin: auto;
+		display: block;
+	}
+	
+	#name
+	{
+		left: 5px;
+		top: 0;
+		font-size: 1em;
+	}
+	
+	.stats
+	{
+		font-size: 1em;
+	}
+	
+	#killerHolder p
+	{
+		font-size: 1em;
+	}
+	
+	#killerHolder a
+	{
+		border-left: none;
+		border-bottom: thin solid #1f1b1a;
+	}
 }
 
 /*Galaxy S*/
 @media only screen and (min-width: 417px) and (max-width: 480px) {
+			#viewHolder
+	{
+		width: 100%;
+		margin: 0;
+		border-radius: 0;
+	}
+	
+	header
+	{
+		border-bottom: none;
+		width: 100%;
+	}
+	
+	header ul li
+	{
+		margin: 0 10px;
+		width: 40%;
+	}
+	
+	#container
+	{
+		width: 100%;
+	}
+	
+	#searchButton
+	{
+		position: static;
+		display: block;
+		margin: auto;
+		margin-bottom: 10px;
+	}
+	
+	.activeButton
+	{
+		width: 50px!important;
+		height: 50px!important;
+	}
+	
+	form
+	{
+		display: block;
+	}
+	
+	form input
+	{
+		width: 98%;
+		padding: 1%;
+	  font-size: 1em;
+		text-align: center;
+		float: none;
+		border-right: none;
+		border-top: thin solid #d4af8e;
+		margin-bottom: 10px;
+	}
+	
+	form:after
+	{
+		display: none;
+	}
+	
+	form span
+	{
+		width: 100%;
+		float: none;
+		font-size: 1em;
+		margin-bottom: 10px;
+		display: block;
+	}
+	
+	.listHolder
+	{
+		width: 100%;
+		text-align: left;
+	}
+	
+	.inputs
+	{
+		font-size: 1em;
+		line-height: 24px;;
+	}
+	
+	.title
+	{
+		font-size: 1em;
+		padding: 0 2%;
+		width: 96%;
+	}
+	
+	#movieDetails
+	{
+		margin: 0;
+	}
+	
+	#movieDetails img
+	{
+		margin: 0 auto;
+   display: block;
+		float: none;
+	}
+	
+	#movieDetails p
+	{
+		width: 96%;
+		display: block;
+		padding: 0 2%;
+		float: none;
+		font-size: 1em;
+		text-align: center;
+	}
+	
+	.identify
+	{
+		display: block;
+		text-align: center;
+		padding: 5px 0 0 0;
+		border-bottom: thin solid #d4af8e;
+	}
+	
+	#killerImgContainer h3
+	{
+		font-size: 1.2em;
+	}
+	
+	#killerImgContainer li
+	{
+		width: 50%;
+	}
+	
+	.killerName
+	{
+		display: block;
+		position: static;
+		padding: 10px 0;
+		font-size: 1em;
+		opacity: 1;
+		-webkit-opacity:1;
+		-o-opacity:1;
+	}
+	
+	#killerHolder
+	{
+		margin: 0;
+		width: 100%;
+		padding: 0;
+	}
+	
+	#killerHolder img
+	{
+		width: 100%;
+		float: none;
+		margin: auto;
+		display: block;
+	}
+	
+	#name
+	{
+		left: 5px;
+		top: 0;
+		font-size: 1em;
+	}
+	
+	.stats
+	{
+		font-size: 1em;
+	}
+	
+	#killerHolder p
+	{
+		font-size: 1em;
+	}
+	
+	#killerHolder a
+	{
+		border-left: none;
+		border-bottom: thin solid #1f1b1a;
+	}
 }
 
 /*Kindle*/
 @media only screen and (min-width: 481px) and (max-width: 533px) {
+			#viewHolder
+	{
+		width: 100%;
+		margin: 0;
+		border-radius: 0;
+	}
+	
+	header
+	{
+		border-bottom: none;
+		width: 100%;
+	}
+	
+	header ul li
+	{
+		margin: 0 10px;
+		width: 40%;
+	}
+	
+	#container
+	{
+		width: 100%;
+	}
+	
+	#searchButton
+	{
+		position: static;
+		display: block;
+		margin: auto;
+		margin-bottom: 10px;
+	}
+	
+	.activeButton
+	{
+		width: 50px!important;
+		height: 50px!important;
+	}
+	
+	form
+	{
+		display: block;
+	}
+	
+	form input
+	{
+		width: 98%;
+		padding: 1%;
+	  font-size: 1em;
+		text-align: center;
+		float: none;
+		border-right: none;
+		border-top: thin solid #d4af8e;
+		margin-bottom: 10px;
+	}
+	
+	form:after
+	{
+		display: none;
+	}
+	
+	form span
+	{
+		width: 100%;
+		float: none;
+		font-size: 1em;
+		margin-bottom: 10px;
+		display: block;
+	}
+	
+	.listHolder
+	{
+		width: 100%;
+		text-align: left;
+	}
+	
+	.inputs
+	{
+		font-size: 1em;
+		line-height: 24px;;
+	}
+	
+	.title
+	{
+		font-size: 1em;
+		padding: 0 2%;
+		width: 96%;
+	}
+	
+	#movieDetails
+	{
+		margin: 0;
+	}
+	
+	#movieDetails img
+	{
+		margin: 0 auto;
+   display: block;
+		float: none;
+	}
+	
+	#movieDetails p
+	{
+		width: 96%;
+		display: block;
+		padding: 0 2%;
+		float: none;
+		font-size: 1em;
+		text-align: center;
+	}
+	
+	.identify
+	{
+		display: block;
+		text-align: center;
+		padding: 5px 0 0 0;
+		border-bottom: thin solid #d4af8e;
+	}
+	
+	#killerImgContainer h3
+	{
+		font-size: 1.2em;
+	}
+	
+	#killerImgContainer li
+	{
+		width: 50%;
+	}
+	
+	.killerName
+	{
+		display: block;
+		position: static;
+		padding: 10px 0;
+		font-size: 1em;
+		opacity: 1;
+		-webkit-opacity:1;
+		-o-opacity:1;
+	}
+	
+	#killerHolder
+	{
+		margin: 0;
+		width: 100%;
+		padding: 0;
+	}
+	
+	#killerHolder img
+	{
+		width: 100%;
+		float: none;
+		margin: auto;
+		display: block;
+	}
+	
+	#name
+	{
+		left: 5px;
+		top: 0;
+		font-size: 1em;
+	}
+	
+	.stats
+	{
+		font-size: 1em;
+	}
+	
+	#killerHolder p
+	{
+		font-size: 1em;
+	}
+	
+	#killerHolder a
+	{
+		border-left: none;
+		border-bottom: thin solid #1f1b1a;
+	}
 }
 
 /*Nook Tablet*/
 @media only screen and (min-width: 534px) and (max-width: 600px) {
+			#viewHolder
+	{
+		width: 100%;
+		margin: 0;
+		border-radius: 0;
+	}
+	
+	header
+	{
+		border-bottom: none;
+		width: 100%;
+	}
+	
+	header ul li
+	{
+		margin: 0 10px;
+		width: 40%;
+	}
+	
+	#container
+	{
+		width: 100%;
+	}
+	
+	#searchButton
+	{
+		position: static;
+		display: block;
+		margin: auto;
+		margin-bottom: 10px;
+	}
+	
+	.activeButton
+	{
+		width: 50px!important;
+		height: 50px!important;
+	}
+	
+	form
+	{
+		display: block;
+	}
+	
+	form input
+	{
+		width: 98%;
+		padding: 1%;
+	  font-size: 1.2em;
+		text-align: center;
+		float: none;
+		border-right: none;
+		border-top: thin solid #d4af8e;
+		margin-bottom: 10px;
+	}
+	
+	form:after
+	{
+		display: none;
+	}
+	
+	form span
+	{
+		width: 100%;
+		float: none;
+		font-size: 1em;
+		margin-bottom: 10px;
+		display: block;
+	}
+	
+	.listHolder
+	{
+		width: 100%;
+		text-align: left;
+	}
+	
+	.inputs
+	{
+		font-size: 1em;
+		line-height: 24px;;
+	}
+	
+	.title
+	{
+		font-size: 1.2em;
+		padding: 0 2%;
+		width: 96%;
+	}
+	
+	#movieDetails
+	{
+		margin: 0;
+	}
+	
+	#movieDetails img
+	{
+		margin: 0 auto;
+   display: block;
+		float: none;
+	}
+	
+	#movieDetails p
+	{
+		width: 96%;
+		display: block;
+		padding: 0 2%;
+		float: none;
+		font-size: 1em;
+		text-align: center;
+	}
+	
+	.identify
+	{
+		display: block;
+		text-align: center;
+		padding: 5px 0 0 0;
+		border-bottom: thin solid #d4af8e;
+	}
+	
+	#killerImgContainer h3
+	{
+		font-size: 1.2em;
+	}
+	
+	#killerImgContainer li
+	{
+		width: 50%;
+	}
+	
+	.killerName
+	{
+		display: block;
+		position: static;
+		padding: 10px 0;
+		font-size: 1em;
+		opacity: 1;
+		-webkit-opacity:1;
+		-o-opacity:1;
+	}
+	
+	#killerHolder
+	{
+		margin: 0;
+		width: 100%;
+		padding: 0;
+	}
+	
+	#killerHolder img
+	{
+		width: 100%;
+		float: none;
+		margin: auto;
+		display: block;
+	}
+	
+	#name
+	{
+		left: 5px;
+		top: 0;
+		font-size: 1em;
+	}
+	
+	.stats
+	{
+		font-size: 1em;
+	}
+	
+	#killerHolder p
+	{
+		font-size: 1em;
+	}
+	
+	#killerHolder a
+	{
+		border-left: none;
+		border-bottom: thin solid #1f1b1a;
+	}
 }
 
 /*Apple Ipad*/
 @media only screen and (min-width: 601px) and (max-width: 768px) {
+  #viewHolder
+	{
+		width: 100%;
+		margin: 0;
+		border-radius: 0;
+	}
+	
+	header
+	{
+		border-bottom: none;
+		width: 100%;
+	}
+	
+	header ul li
+	{
+		margin: 0 10px;
+		width: 40%;
+	}
+	
+	#container
+	{
+		width: 100%;
+	}
+	
+	#searchButton
+	{
+		position: static;
+		display: block;
+		margin: auto;
+		margin-bottom: 10px;
+	}
+	
+	.activeButton
+	{
+		width: 50px!important;
+		height: 50px!important;
+	}
+	
+	form
+	{
+		display: block;
+	}
+	
+	form input
+	{
+		width: 98%;
+		padding: 1%;
+	  font-size: 1.2em;
+		text-align: center;
+		float: none;
+		border-right: none;
+		border-top: thin solid #d4af8e;
+		margin-bottom: 10px;
+	}
+	
+	form:after
+	{
+		display: none;
+	}
+	
+	form span
+	{
+		width: 100%;
+		float: none;
+		font-size: 1em;
+		margin-bottom: 10px;
+		display: block;
+	}
+	
+	.listHolder
+	{
+		width: 50%;
+		text-align: left;
+	}
+	
+	.inputs
+	{
+		font-size: 1em;
+		line-height: 24px;;
+	}
+	
+	.title
+	{
+		font-size: 1.2em;
+		padding: 0 2%;
+		width: 96%;
+	}
+	
+	#movieDetails
+	{
+		margin: 0;
+	}
+	
+	#movieDetails img
+	{
+		margin: 0 auto;
+   display: block;
+		float: none;
+	}
+	
+	#movieDetails p
+	{
+		width: 96%;
+		display: block;
+		padding: 0 2%;
+		float: none;
+		font-size: 1em;
+		text-align: center;
+	}
+	
+	.identify
+	{
+		display: block;
+		text-align: center;
+		padding: 5px 0 0 0;
+		border-bottom: thin solid #d4af8e;
+	}
+	
+	#killerImgContainer li
+	{
+		width: 25%;
+	}
+	
+	.killerName
+	{
+		display: block;
+		position: static;
+		padding: 10px 0;
+		font-size: 1em;
+		opacity: 1;
+		-webkit-opacity:1;
+		-o-opacity:1;
+	}
+	
+	#killerHolder
+	{
+		margin: 0;
+		width: 100%;
+		padding: 0;
+	}
+	
+	#killerHolder img
+	{
+		width: 100%;
+		float: none;
+		margin: auto;
+		display: block;
+	}
+	
+	#name
+	{
+		left: 5px;
+		top: 0;
+		font-size: 1em;
+	}
+	
+	.stats
+	{
+		font-size: 1em;
+	}
+	
+	#killerHolder p
+	{
+		font-size: 1em;
+	}
+	
+	#killerHolder a
+	{
+		border-left: none;
+		border-bottom: thin solid #1f1b1a;
+	}
 }
 
 /*Desktop1*/
 @media only screen and (min-width: 769px) and (max-width: 980px) {
+	header ul li
+	{
+		margin: 0 20px;
+		width: 30%;
+	}
+	
+	#container
+	{
+		width: 100%;
+	}
+	
+	#searchButton
+	{
+		top: 10px;
+	}
+	
+	.activeButton
+	{
+		width: 60px!important;
+		height: 60px!important;
+	}
+	
+	form input
+	{
+		width: 98%;
+		padding: 1%;
+	  font-size: 1.7em;
+		text-align: center;
+	}
+	
+	form:after
+	{
+		display: none;
+	}
+	
+	form span
+	{
+    font-size: 1em;
+	}
+	
+	.listHolder
+	{
+		width: 50%;
+		text-align: left;
+	}
+	
+	.inputs
+	{
+		font-size: 1em;
+		line-height: 24px;;
+	}
+	
+	#movieDetails img
+	{
+		margin-bottom: 10px;
+	}
+	
+	.title
+	{
+		font-size: 1.6em;
+		padding: 0 2%;
+		width: 96%;
+	}
+	
+	#detailHolder p
+	{
+		font-size: 1em;
+	}
+	
+	#killerImgContainer li
+	{
+		width: 25%;
+	}
+	
+	.killerName
+	{
+		padding-top:100px;
+	}
+	
+	#killerHolder
+	{
+		margin: 0;
+		width: 100%;
+		padding: 0;
+	}
+	
+	#killerHolder img
+	{
+		width: 100%;
+		float: none;
+		margin: auto;
+		display: block;
+	}
+	
+	#name
+	{
+		left: 5px;
+		top: 0;
+		font-size: 1em;
+	}
+	
+	.stats
+	{
+		font-size: 1em;
+	}
+	
+	#killerHolder p
+	{
+		font-size: 1em;
+	}
+	
+	#killerHolder a
+	{
+		border-left: none;
+		border-bottom: thin solid #1f1b1a;
+	}
 }
 
 /*Desktop2*/
@@ -670,4 +2289,8 @@ form span
 
 /*Desktop 3*/
 @media only screen and (min-width: 1367px) {
+	#name
+	{
+		left: 350px;
+	}
 }
